@@ -43,7 +43,7 @@ Open the address Eleventy prints. Run `npm run build` to produce the complete st
 
 ## GitHub Pages and the domain
 
-The workflow in `.github/workflows/pages.yml` builds on pushes to `main`. Select **Settings > Pages > Build and deployment > Source > GitHub Actions**. Once enabled, the workflow can also be run manually from the Actions tab.
+The workflow in `.github/workflows/pages.yml` builds on pushes to `main`, updates the compiled files on `gh-pages`, and requests a GitHub Pages build. The Pages publishing source is the root of `gh-pages`. You can also run the workflow manually from the Actions tab.
 
 In the repository’s Pages settings, save `tejasbadala.in` as the custom domain. Configure the domain’s DNS for GitHub Pages using the [official custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Check the domain verification and HTTPS status in Pages settings. The build also carries `src/CNAME` into `dist/`.
 
