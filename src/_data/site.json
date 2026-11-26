@@ -1,0 +1,16 @@
+{
+  "name": "Tejas H Badala",
+  "domain": "https://tejasbadala.in",
+  "email": "tejasbadalah@gmail.com",
+  "literaryEmail": "naanukapi@gmail.com",
+  "blogger": "https://naanukapi.blogspot.com/",
+  "book": "https://www.nbtindia.gov.in/books_detail__60__pm-yuva-series__3392__aranyani.nbt",
+  "vikrama": "https://drive.google.com/drive/folders/1sn_BgPDNR3ox_qolMO2fUzsHTLqYhr8_?usp=sharing",
+  "nav": [
+    ["home", "Home", "", "home"],
+    ["profile", "Profile", "profile/", "person"],
+    ["work", "Work", "work/", "archive"],
+    ["law", "Law", "law/", "backpack"],
+    ["blog", "Blog", "blog/", "pencil-2"]
+  ]
+}

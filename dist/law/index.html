@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Law and research | Tejas H Badala</title>
+<meta name="description" content="Legal education, internships, mooting, coursework and community legal literacy work by Tejas H Badala."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<script>(() => {
+  const key = "tejas-portfolio-theme";
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const root = document.documentElement;
+  let preference = null;
+  let toggle;
+
+  function readPreference() {
+    try {
+      const value = window.localStorage.getItem(key);
+      preference = value === "dark" || value === "light" ? value : null;
+    } catch {
+      // The in-page switch also works when browser storage is unavailable.
+    }
+  }
+
+  function render() {
+    const theme = preference || (system.matches ? "dark" : "light");
+    root.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#17211e" : "#faf9f5";
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+      toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+  }
+
+  readPreference();
+  render();
+  document.addEventListener("DOMContentLoaded", () => {
+    toggle = document.querySelector(".theme-toggle");
+    toggle.addEventListener("click", () => {
+      preference = root.dataset.theme === "dark" ? "light" : "dark";
+      try { window.localStorage.setItem(key, preference); } catch { /* Session-only preference. */ }
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  });
+  system.addEventListener("change", render);
+  window.addEventListener("storage", event => {
+    if (event.key === key || event.key === null) { readPreference(); render(); }
+  });
+  window.addEventListener("pageshow", () => { readPreference(); render(); });
+})();
+</script>
+<link rel="canonical" href="https://tejasbadala.in/law/">
+<meta property="og:title" content="Law and research | Tejas H Badala"><meta property="og:description" content="Legal education, internships, mooting, coursework and community legal literacy work by Tejas H Badala."><meta property="og:url" content="https://tejasbadala.in/law/"><meta property="og:image" content="https://tejasbadala.in/assets/western-ghats.webp">
+<link rel="icon" href="../assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="../assets/touch-icon.png">
+<link rel="preload" href="../assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="page-law">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><div class="wrap mast-inner">
+<a href="../" class="brand" aria-label="Tejas H Badala, home"><img src="../assets/favicon.png" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<div class="header-end"><span class="location"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#globe"/></svg> Mysuru, India</span><a class="contact-link" href="../contact/" aria-label="Get in touch" title="Get in touch"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#envelope-closed"/></svg> <span>Get in touch</span></a>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+  <svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#moon"/></svg><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#sun"/></svg>
+</button></div>
+</div></header>
+<main id="main" tabindex="-1">
+<div class="wrap inside"><section class="split-head"><div><p class="eyebrow"><span class="rule"></span>Law</p><h1>Legal education<br>and research</h1>
+<p class="deck">My LL.M. at RV University, Bengaluru, focuses on Intellectual Property and Technology Law.</p>
+<p>I completed my B.A. LL.B. (Honours) with Distinction at JSS Law College, Mysuru, in June 2026. My undergraduate internships took me to a district registration office, a Kannada newsroom and a university research setting.</p></div>
+<figure class="wide-print"><img src="../assets/law-study.webp" alt="An engraved illustration of law books by a sunlit window"></figure></section>
+<section class="essay-grid"><div><h2>Internships</h2>
+<div class="entry"><span class="entry-meta">2024</span><div><h3>Bharatiya Matanga Samajik Samskrutik University</h3><p>I undertook a legal research internship at this institution, which is affiliated to Kannada University, Hampi.</p></div></div>
+<div class="entry"><span class="entry-meta">2023</span><div><h3>Vishwa Samvada Kendra and Vikrama Weekly</h3><p>I worked as a legal intern with the Bengaluru media centre and the Kannada weekly Vikrama.</p></div></div>
+<div class="entry"><span class="entry-meta">2022</span><div><h3>Sub-Registrar’s Office, Mysuru South</h3><p>I completed a legal internship at the Mysuru South registration office.</p></div></div>
+<h2 class="subsection">Mooting & legal literacy</h2>
+<div class="entry"><span class="entry-meta">2021, 2022</span><div><h3>Intra-collegiate moot court</h3><p>I appeared as a speaker in 2021 and served as a researcher in 2022 at JSS Law College.</p></div></div>
+<div class="entry"><span class="entry-meta">2022, 2024</span><div><h3>Community legal aid</h3><p>I performed in plays on legal rights in Nanjangudu in 2022 and Mysuru in 2024. At JSS Law College, I also took part in Drama De La Corte, a theatre programme on legal issues.</p></div></div>
+<div class="entry"><span class="entry-meta">Field study</span><div><h3>Sports law</h3><p>As part of my study of Indian sports law, I visited the Sports Authority of India.</p></div></div>
+</div><aside class="side-note"><h2>Research writing</h2><p>Krithi Kailar and I co-authored an article on technology and law for a competition at Presidency University, Bengaluru.</p><p>I also co-authored an essay on gender justice for a competition organised by National Law Institute University, Bhopal.</p>
+<h2>Further study</h2><ul><li>Symposium on Competition Law in India, Competition Commission of India and JSS Law College, 2025.</li><li>The Art of Civil Drafting from District Court to Supreme Court, Sambhav Initiative, 2024.</li><li>Legal Language and Literature, JSS Law College, 2022.</li><li>Life Skills: Science of Well-Being, JSS Law College, 2021.</li><li>Kannada Ratna, Kannada Sahitya Parishat, 2021.</li></ul></aside></section></div>
+</main>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="../contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation"><a href="../" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#home"/></svg><span>Home</span></a><a href="../profile/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#person"/></svg><span>Profile</span></a><a href="../work/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#archive"/></svg><span>Work</span></a><a href="../law/" aria-current="page"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#backpack"/></svg><span>Law</span></a><a href="../blog/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#pencil-2"/></svg><span>Blog</span></a></nav>
+<script src="../assets/dock.js" defer></script>
+</body></html>

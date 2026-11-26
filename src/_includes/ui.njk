@@ -1,0 +1,8 @@
+{% macro icon(name) %}<svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="@root/assets/icons.svg#{{ name }}"/></svg>{% endmacro %}
+{% macro label(text) %}<p class="eyebrow"><span class="rule"></span>{{ text }}</p>{% endmacro %}
+{% macro card(url, kind, title, picture, alt, style) %}
+<a class="card" href="{{url}}">
+  <div class="card-art {{style}}"><img src="@root/assets/{{picture}}" alt="{{alt}}" loading="lazy" decoding="async"></div>
+  <div class="card-foot"><div><span class="kicker">{{kind}}</span><h3>{{title}}</h3></div>{{icon('bookmark')}}</div>
+</a>{% endmacro %}
+{% macro entry(title, body, year) %}<div class="entry"><span class="entry-meta">{{year}}</span><div><h3>{{title}}</h3><p>{{body}}</p></div></div>{% endmacro %}

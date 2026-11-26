@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+{% from "ui.njk" import label %}
+<article class="wrap inside reading"><a class="breadcrumb" href="@root/blog/">Blog</a>{{label(category)}}<h1 lang="{{language or 'en'}}">{{title}}</h1>
+{% if gloss %}<p class="deck">{{gloss}}</p>{% endif %}
+<p class="byline">Tejas H Badala {% if dateLabel %} · {{dateLabel}}{% elif date %} · <time datetime="{{date | isoDate}}">{{date | readableDate}}</time>{% endif %}</p>
+{% if hero %}<img class="reading-art" src="@root/assets/{{hero}}" alt="{{heroAlt or ''}}">{% endif %}
+<div class="article-body" lang="{{language or 'en'}}">{{content | safe}}</div>
+{% if source %}<p class="source-note"><a class="text-link" href="{{source}}">{{sourceLabel or 'Original publication'}}</a></p>{% endif %}
+<a class="text-link" href="@root/blog/">Back to the blog</a></article>
