@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ಕುಳ್ಳನ ಹಸಿವು | Tejas H Badala</title>
+<meta name="description" content="ಕುಳ್ಳನ ಹಸಿವು · Naanu Kapi, a Kannada story by Tejas H Badala."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<script>(() => {
+  const key = "tejas-portfolio-theme";
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const root = document.documentElement;
+  let preference = null;
+  let toggle;
+
+  function readPreference() {
+    try {
+      const value = window.localStorage.getItem(key);
+      preference = value === "dark" || value === "light" ? value : null;
+    } catch {
+      // The in-page switch also works when browser storage is unavailable.
+    }
+  }
+
+  function render() {
+    const theme = preference || (system.matches ? "dark" : "light");
+    root.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#1c1d2b" : "#faf9f5";
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+      toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+  }
+
+  readPreference();
+  render();
+  document.addEventListener("DOMContentLoaded", () => {
+    toggle = document.querySelector(".theme-toggle");
+    toggle.addEventListener("click", () => {
+      preference = root.dataset.theme === "dark" ? "light" : "dark";
+      try { window.localStorage.setItem(key, preference); } catch { /* Session-only preference. */ }
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  });
+  system.addEventListener("change", render);
+  window.addEventListener("storage", event => {
+    if (event.key === key || event.key === null) { readPreference(); render(); }
+  });
+  window.addEventListener("pageshow", () => { readPreference(); render(); });
+})();
+</script>
+<link rel="canonical" href="https://tejasbadala.in/naanu-kapi/kullana-hasivu/">
+<meta property="og:title" content="ಕುಳ್ಳನ ಹಸಿವು | Tejas H Badala"><meta property="og:description" content="ಕುಳ್ಳನ ಹಸಿವು · Naanu Kapi, a Kannada story by Tejas H Badala."><meta property="og:url" content="https://tejasbadala.in/naanu-kapi/kullana-hasivu/"><meta property="og:image" content="https://tejasbadala.in/assets/western-ghats.webp">
+<link rel="icon" href="../../assets/te-mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/touch-icon.png">
+<link rel="preload" href="../../assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="page-kapi">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><div class="wrap mast-inner">
+<a href="../../" class="brand" aria-label="Tejas H Badala, home"><img src="../../assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<div class="header-end"><span class="location"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#globe"/></svg> Mysuru, India</span><a class="contact-link" href="../../contact/" aria-label="Get in touch" title="Get in touch"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#envelope-closed"/></svg> <span>Get in touch</span></a>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+  <svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#moon"/></svg><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#sun"/></svg>
+</button></div>
+</div></header>
+<main id="main" tabindex="-1"><article class="wrap inside reading">
+  <a class="breadcrumb" href="../../naanu-kapi/">Naanu Kapi</a>
+  <h1 lang="kn">ಕುಳ್ಳನ ಹಸಿವು</h1>
+  <p class="byline">Tejas H Badala · <time datetime="2023-07-09">9 July 2023</time></p>
+  <div class="article-body" lang="kn"><p>“ಸ್‌….ಸ್” ಎಂದು ಎಲ್ಲೋ ಸಣ್ಣ ಸದ್ದು ಕೇಳಿಸುತ್ತಿತ್ತು.</p><p>ಕುಳ್ಳನನ್ನು ನಿಲ್ಲಿಸಿಕೊಂಡು ಪೀಚಿ ಆ ಸದ್ದನ್ನ ಮಾಡುತ್ತಿದ್ದಳು. ಪೀಚಿ ಏನು ದೊಡ್ಡವಳಲ್ಲ. ಕುಳ್ಳನಿಗಿಂತ ಒಂದು ವರ್ಷ ಮೊದಲು ಹುಟ್ಟಿದವಳು ಅಷ್ಟೆ. ಅವನ ಕಂದು ಬಣ್ಣದ ಚಡ್ಡಿ ನೆಲಕ್ಕೆ ಬಿದ್ದು ಮಣ್ಣಾಗಿತ್ತು.</p><p>ದೂರದಿಂದ “ಆಯ್ತೇನೋ?” ಎಂದು ದುಗ್ಗಿ ಕೇಳಿದಳು. ಬಲಗೈಯಲ್ಲಿ ಲೋಟ ಹಿಡಿದು, ಎಡಗೈಯಲ್ಲಿ ಪಾರ್ಲೆಜಿ ಬಿಸ್ಕತ್ತನ್ನು ಆ ಲೋಟದೊಳಕ್ಕೆ ಆತುರಾತುರವಾಗಿ ಅದ್ದಿ ಅದ್ದಿ ತಿನ್ನುತ್ತಿದ್ದಳು. ಕಂಕುಳಲ್ಲಿ ಹಿಡಿದಿದ್ದ ಐದು ರೂಪಾಯಿನ ಬಿಸ್ಕತ್ತು ಪ್ಯಾಕೆಟಿನಿಂದ ನಾಜೂಕಾಗಿ ತೆಗೆತೆಗೆದು ಇನ್ನೊಂದು ಮತ್ತೊಂದು ಎಂದುಕೊಂಡು ಎಲ್ಲಾ ಬಿಸ್ಕತ್ತುಗಳನ್ನು ತಿಂದುಬಿಟ್ಟಳು. ತುಟಿಗೆ ಹಾಲು ಮೆತ್ತಿಕೊಂಡಿತ್ತು. ಬಿಸ್ಕತ್ತನ್ನು ಹಾಲಿನಲ್ಲಿ ಅದ್ದುವ ವೇಗವು ಬಹಳ ಸಮರ್ಪಕವಾಗಿತ್ತು; ಬಿಸ್ಕತ್ತಿನ ಗಟ್ಟಿತನವೂ ಹಾಳಾಗಬಾರದು, ಅದರೊಳಕ್ಕೆ ಹಾಲು ಸೇರಿಕೊಂಡು, ಕಚ್ಚಿದಾಗ ಗಶ್‌ ಎಂದು ಬಾಯೊಳಕ್ಕೆ ಹಾಲು ಬಿಸ್ಕತ್ತಿನ ಮಿಶ್ರಣ ಹರಡುವಂತೆ.</p><p>ಕುಳ್ಳ ಸುಸ್ಸು ಮಾಡಿದನೋ ಬಿಟ್ಟನೋ, ಅಕ್ಕನ ಮುಖವನ್ನೇ ನೋಡುತ್ತಾ ಹಲ್ಲು ಬಿಟ್ಟು ನಗುತ್ತಿದ್ದ. ಪೀಚಿ ಬೆನ್ನು ಗೂನು ಮಾಡಿ, “ಆಯ್ತೇನೋ?” ಎಂದಳು.</p><p>ನಗುತ್ತಿದ್ದ ಕುಳ್ಳ, “ಬತ್ತಾ ಇಲ್ಲ ಕಣೆ ಪೀಚಿ” ಎಂದು ಕಿಸಕ್ಕನೆ ನಕ್ಕ. ಕಣ್ಣು ಬಿಡುತ್ತಾ, “ಲೇಯ್‌, ಇವೆಲ್ಲಾ ದುಗ್ಗಿ ಹತ್ರಾ ಇಟ್ಕೊ. ನನ್ನನ್ನ ಅಕ್ಕ ಅಂತ ಕರೀಬೇಕು” ಎಂದಳು ಭಾರೀ ದೊಡ್ಡವಳಂತೆ. ಚಡ್ಡಿಯನ್ನು ಮೇಲೇರಿಸಿಕೊಳ್ಳುವುದರಲ್ಲಿ ನಿರತನಾಗಿದ್ದ ಕುಳ್ಳ ತಲೆಯಲ್ಲಾಡಿಸಿ ಹಿಂದೆ ತಿರುಗಿ ಓಡತೊಡಗಿದ. ಹುಟ್ಟಿದಾಗಿನಿಂದಲೂ ಇದೇ ಬಿರುಸು ಮಣ್ಣು, ಕಲ್ಲುಗಳ ಮೇಲೆ ಹೊರಳಾಡಿ, ಬಿದ್ದು ಎದ್ದು ನಡೆದು ಅಭ್ಯಾಸವಾಗಿದ್ದ ಕುಳ್ಳನು ನಿರಾಯಾಸವಾಗಿ ಮುಳ್ಳು, ಚೂಪು ಜಲ್ಲಿಕಲ್ಲುಗಳಿಂದ ತಪ್ಪಿಸಿಕೊಂಡು ಮನೆಯ ಕಡೆಗೆ ಓಡತೊಡಗಿದ. ಮನೆಯೆಂದರೆ ಏನಲ್ಲಿ ಮಹಾ ಸುಖವೇನಿಲ್ಲ. ಸಿಮೆಂಟು ಇಟ್ಟಿಗೆಗಳಿಂದ ಕಟ್ಟಿದ್ದಂತಹ ತಾತ್ಕಾಲಿಕ ಗೂಡು. ಒಂದೇ ಕೊಠಡಿಯು ಸಂದರ್ಭಕ್ಕೆ ಅನುಸಾರವಾಗಿ ಅಡುಗೆಮನೆಯಾಗಿ, ಮಲಗುವ ಕೋಣೆಯಾಗಿ, ಬಚ್ಚಲೊಂದು ಬಿಟ್ಟು ಇನ್ನೆಲ್ಲವೂ ಆ ಸಿಮೆಂಟು ಇಟ್ಟಿಗೆಯ ಕೊಠಡಿಯೇ.</p><p>ಅದರ ಹಿಂಭಾಗದಲ್ಲಿ ನಿಂತು ದುಗ್ಗಿ ಆತುರಾತುರವಾಗಿ ಒಂದೇ ಒಂದು ಬಿಸ್ಕತ್ತನ್ನು ತಿಂದು ತಿಂದು ಖಾಲಿ ಪ್ಯಾಕೆಟ್ಟನ್ನು ಅಲ್ಲೇ ಎಸೆದು ಮೂತಿಯನ್ನ ಮುಂಗೈಯಿಂದ ಒರೆಸಿಕೊಂಡು “ಆಯ್ತೇನ್ರೋ?” ಎಂದಳು.</p><p>ಅವಳನ್ನು ನೋಡುತ್ತಳೇ ಕುಳ್ಳ ನಿಂತುಬಿಟ್ಟ. ಹಿಂದೆ ಬರುತ್ತಿದ್ದ ಪೀಚಿ ಕುಳ್ಳನಿಗೆ ಡಿಕ್ಕಿ ಹೊಡೆದು ನಿಂತಳು.</p><p>“ಪೀಚಿ, ಬಿಕ್ಕತ್‌ ಕಾಲಿ ಅನ್ಚುತ್ತೆ” ಎಂದು ಅವನು ಪಿಸುಗುಟ್ಟಿದ. ಸೊಂಟದ ಮೇಲೆ ಒಂದು ಕೈ, ಬೇಗ ಬೇಗ ನಡೆದು, “ಏನೇ ದುಗ್ಗಿ, ತಿಂಡ್ಪೋತಿ, ಖಾಲಿ ಮಾಡ್ಬುಟ್ಯಾ? ನಂಗ್‌ ಬೇಡ, ಹೋಗ್ಲಿ ಆ ಕುಳ್ಳಂಗಾದ್ರೂ ಎರಡು ಇಟ್ಟಿರ್ಬಾರ್ದಾ?” ಎಂದು ಪೀಚಿ ರೇಗಿದಳು.</p><p>ತುಂಟನಗು ನಗುತ್ತಾ ಪೀಚಿಗೆ ಕಣ್ಣು ಹೊಡೆದು, “ಪ್ರಿಯಾ, ಅಮ್ಮ ಹೇಳ್ತಾ ಇತ್ತು, ಅವ್ನು ಬಿಸ್ಕೆತ್‌ ತಿಂದು ಮತ್ತೆ ಬೇದಿ ಹೊಡ್ಕೊಳತ್ತೆ ಅಂತ” ಎಂದು ದುಗ್ಗಿ ಮುಗುಳ್ನಕ್ಕಳು. ಪೀಚಿಯ ʼಒರಿಜಿನಲ್‌ʼ ಹೆಸರನ್ನು ದುಗ್ಗಿಯೇ ಯಾವಾಗಲಾದರೂ ಒಮ್ಮೆ ಉಪಯೋಗಿಸುತ್ತಿದ್ದಳು. ಅದು ಬಿಟ್ಟರೆ ಮನೆಯವರಿಗೆಲ್ಲಾ ಅವಳು ಪೀಚಿಯೇ.</p><p>ಇವರ ಮಾತುಕತೆ ಆಗುವಷ್ಟರಲ್ಲಿ ಕುಳ್ಳ ಅಲ್ಲಿಯೇ ಕುಳಿತು ಎರಡು ಕಲ್ಲುಗಳ ನಡುವಿನ ಯುದ್ಧವನ್ನು ವರ್ಣಿಸಿ ಆಟವಾಡುತ್ತಿದ್ದ. ಅವನ ಕೈಗಳು ಯಾವುದೋ ಮರುಭೂಮಿಯ ನಕ್ಷೆಯಂತೆ ಮಣ್ಣಿನ ಗುರುತುಗಳಿಂದ ತುಂಬಿಹೋಗಿತ್ತು. ಅಷ್ಟರಲ್ಲೇ ಅವನ ಹೊಟ್ಟೆಯು “ಗುರ್ರ್ರ್” ಎಂಬ ಸದ್ದನ್ನು ಮಾಡಿತು. ಥಟ್ಟನೆ ತಲೆಯೆತ್ತಿ, “ದುಗ್ಗಿ ಹಚ್ವು ಕಣೆ” ಎಂದ. ಇನ್ನೇನು ಕಣ್ಣಲ್ಲಿ ನೀರು ಸುರಿಯಬೇಕು; ಪೀಚಿ ಓಡೋಡಿ, “ಅಳ್ಬೇಡ್ವೋ ಕುಳ್ಳ, ಅಂಗ್ಡಿಗೆ ಹೋಗಿ ಏನಾದ್ರೂ ತರಾಣ” ಎಂದಳು ಭಾರಿ ದೊಡ್ಡವಳಂತೆ.</p><p>ಕುಳ್ಳನಿಗೆ ಕೋಪವು ಹೆಚ್ಚಾಗಿ ದುಗ್ಗಿಯ ಬಳಿ ಓಡಿ ಓಡಿ ಅವಳ ಬಲತೋಳಿಗೆ ರಪ್ಪನೆ ಏಟು ಕೊಟ್ಟನು. ದುಗ್ಗಿಗೂ ರೇಗಿತು. ಬರೀ ಒಂದು ತೆಳ್ಳಗಿನ ಚಡ್ಡಿಯು ಮುಚ್ಚಿದ ಅವನ ಅಂಡಿನ ಮೇಲೆ ಫಟ್‌ ಎಂದು ಬಾರಿಸಿಬಿಟ್ಟಳು. ಪಾಪ, ಆ ಮೃದು ಚರ್ಮದ ಮೇಲೆ ಕೆಂಪಗೆ ಬರೆ ಬಂದುಬಿಟ್ಟಿತು.</p><p>ದೂರದಲ್ಲಿ ಬೀಡಿ ಸೇದಿಕೊಂಡು ಕುಳಿತಿದ್ದ ತಾತ ಏನೋ ಸದ್ದಾಯಿತು ಎಂದು ತಲೆಯನ್ನು ಕೆಡಿಸಿಕೊಳ್ಳದೆಯೇ ಒಮ್ಮೆ ತಿರುಗಿ ಮತ್ತೆ ಅವರ ಪಾಡಿಗವರು ಕೆಲಸದಲ್ಲೇ ತೊಡಗಿದರು.</p><p>ದುಗ್ಗಿಗೂ ಮನಸ್ಸು ಕರಗಿತೇನೋ; “ಆಯ್ತು ಬಾ ಏನಾದ್ರೂ ಇದ್ಯಾ ನೋಡ್ತೀನಿ” ಎಂದು ಆ ವಿವಿದೋದ್ದೇಶ ಕೊಠಡಿಯೊಳಕ್ಕೆ ಕರೆದುಕೊಂಡು ಹೋದಳು. ಪೀಚಿ ಎಲ್ಲವನ್ನೂ ನಿಂತು ನೋಡುತ್ತಿದ್ದಳು. ಆ ಕೊಠಡಿಯೊಳಗೆ ಇದ್ದ ಏಕೈಕ ಮ್ಯಾರಿ ಬಿಸ್ಕತ್ತಿನ ಪ್ಯಾಕೆಟ್ಟಿನಲ್ಲಿ ಉಳಿದಿದ್ದ ಎರಡು ತುಂಡುಗಳನ್ನೂ ಕೆಂಪಿರುವೆಗಳು ಮುತ್ತಿಕೊಂಡುಬಿಟ್ಟಿದ್ದವು. ಕುಳ್ಳ ಅಲ್ಲಿಯೇ ಕುಳಿತುಬಿಟ್ಟ. “ಹೋಗೇ” ಎಂದ.</p><p>ಪೀಚಿ ಒಳಗೆ ಬಂದಳು. ಮೂರೂ ಪಿಳ್ಳೆಗಳು ಸೇರಿಕೊಂಡು ಹಸಿವನ್ನು ನೀಗಿಸಿಕೊಳ್ಳುವ ವಿಧಾನವನ್ನು ಕಂಡುಕೊಳ್ಳತೊಡಗಿದರು. ಪೀಚಿ ದುಗ್ಗಿಯ ಮುಖ ನೋಡಿ, “ನೀನು ತಿಂದು ಆಗಿದೆ ಅಲ್ವಾ, ಇನ್ನೇನು” ಎಂದಳು. ದುಗ್ಗಿ, “ಪ್ಲೀಸ್‌ ಕಣೆ, ಒಂದೇ ಒಂದು ಪೀಸು” ಎಂದಳು.</p><p>ಅಷ್ಟರಲ್ಲಾಗಲೇ ಕುಳ್ಳ ಆ ಕೊಠಡಿಯ ನೆಲವನ್ನ ಕೊರೆಯುತ್ತಿದ್ದ.</p><p>“ಕುಳ್ಳ, ತಾತನನ್ನ ಕೇಳೋ, ಏನಾದ್ರೂ ಕಾಸ್‌ ಕೊಟ್ಟಾರು” ಎಂದಿದ್ದೇ ತಡ, ಅವನು ಬೀಡಿ ಸೇದುತ್ತಿದ್ದ ತಾತನ ಬಳಿ ಓಡೋಡಿ ಬಂದ. “ಓನೋ ನನ್ನಪ್ಪ” ಎಂದರು ತಾತ.</p><p>ಬೀಡಿಯ ಹೊಗೆ ಮುಖಕ್ಕೆ ಹೊಡೆಯುತ್ತಿತ್ತು. “ತಾತ ಕಾಚ್‌ ಕೊಡ್ತಿಯಾ? ಅಂಗ್ದೀಲಿ ಏನಾದ್ಲೂ ತನ್ಕೋತಿವಿ” ಎಂದು ಕುಳ್ಳ ಕೇಳಿದ. ತಾತ ನಗುತ್ತಾ, “ತಕ್ಕೋ” ಎಂದು ಜೇಬಿನೊಳಕ್ಕೆ ಕೈ ಹಾಕಿ, ಮುಷ್ಟಿ ಮಾಡಿ ಕುಳ್ಳನ ಪುಟ್ಟ ಕೈಯಲ್ಲಿ ಆ ಮುಷ್ಟಿಯನ್ನು ಬಿಚ್ಚಿದರು. ಏನೂ ಇರಲಿಲ್ಲ.</p><p>“ಅಹಾಹಾಹಾ” ಎಂದು ತಾತ ಜೋರಾಗಿ ನಕ್ಕರು. ಕುಳ್ಳನೂ ನಕ್ಕಿದ. ತಾತನ ತೊಡೆಯ ಮೇಲಿಂದ ಎದ್ದು ಓಡೋಡಿ ಬಂದ. “ಪೀಚಿ, ದುಗ್ಗಿ” ಎಂದು ಕೂಗುತ್ತಾ, ಅವನೂ ಮುಷ್ಟಿ ಮಾಡಿ ಅವರ ಕೈಗಳಲಿಟ್ಟ. ಖಾಲಿ ಮುಷ್ಟಿಯನ್ನ ತೆರೆದು ನಕ್ಕಿದ್ದ. “ಅಯ್ಯೋ” ಎಂದು ಪೀಚಿ ಹಣೆ ಚಚ್ಚಿಕೊಂಡಳು.</p><p>ಹೊರಗೆ ನೋಡುತ್ತಾ ನಿಂತಿದ್ದ ದುಗ್ಗಿಗೇ ಉಪಾಯವೊಂದು ಹೊಳೆಯಿತು.</p><p>“ಪೀಚಿ, ಆ ಹೂಗಳ್ನೆಲ್ಲಾ ಕಿತ್ತಿ ಮಾರ್ಬಿಡಾನ, ಕಾಸ್‌ ಕೊಡ್ತಾರೆ!” ಎಂದಳು.</p><p>ಮೂವರ ಕಣ್ಣಲ್ಲೂ ಹೊಳಪು. ಅಲ್ಲೇ ಬೆಳೆಯುತ್ತಿದ್ದ ಹಳದಿ ಬಣ್ಣದ ಗಂಟೆ ಆಕಾರದ ಹೂಗಳನ್ನು ತಮ್ಮ ಪುಟ್ಟ ಕೈಗಳಲ್ಲಿ ಒಂದೊಂದಾಗಿ ಕೀಳತೊಡಗಿದರು. ಪೀಚಿಯು ತನ್ನ ಪುಟ್ಟ ಲಂಗದ ಅಂಚನ್ನು ಹಿಡಿದು ಎಲ್ಲಾ ಹೂಗಳನ್ನು ಅದರೊಳಕ್ಕೆ ಹಾಕಿಕೊಂಡಳು. ನಾಲ್ಕೈದು ಹೂಗಳು ತುಂಬಿದ ಮೇಲೆ, ಕುಳ್ಳನು, “ಇನ್ನೂ ಬೇಕಾ?” ಎಂದು ಕೇಳಿದ. ಮೈ ಕೈ ಎಲ್ಲಾ ಕೊಳೆ ಮಾಡಿಕೊಂಡಿದ್ದ ದುಗ್ಗಿ, “ಇನ್ನೂ ಬೇಕು, ಬೇಕು” ಎಂದಳು.</p><p>ಅಂತೂ ಇಂತೂ ಕಷ್ಟ ಪಟ್ಟು ಹದಿನಾರು ಹೂವುಗಳಾದವು. ಪೀಚಿಯ ಅಂಗಿಯೆಲ್ಲಾ ಒದ್ದೆಯಾಗಿತ್ತು. ಮೂವರೂ ನಗುನಗುತ್ತಾ ಅಂಗಡಿಯ ಬಳಿ ಹೋಗಿ ನಿಂತರು.</p><p>ನಾಯಿಯನ್ನು ಹಿಡಿದು ವಾಯುವಿಹಾರಕ್ಕೆಂದು ಬಂದಿದ್ದ ಹಿರಿಯರೊಬ್ಬರು ಈ ಮೂವರನ್ನೂ ನೋಡಿದರು.</p><p>ನಿರೀಕ್ಷೆಯಲ್ಲಿ ಪೀಚಿ, ದುಗ್ಗಿ ಹಾಗು ಕುಳ್ಳ ಅವರ ಮುಖವನ್ನೇ ನೋಡಿದರು.</p><p>“ಏನ್ರೋ ಇದು?” ಅವರು ಕೇಳಿದರು.</p><p>“ಸಾರ್‌, ಹೂವಾ ತಗೋಳಿ ಸಾರ್”‌ ದುಗ್ಗಿ ಎಂದಳು.</p><p>“ನಂಗ್ಯಾತಕ್ಕೋ?” ಹಿರಿಯರು ಮುದ್ದಿನಿಂದ ಕೇಳಿದರು.</p><p>ಕುಳ್ಳನು “ಪೋಟೋಗೆ ಸಾರ್!”‌ ಎಂದನು ಉತ್ಸಾಹದಲ್ಲಿ.</p><p>“ನಿಂಗೆಷ್ಟೋ ವಯಸ್ಸು?” ಅವರು ಕೇಳಿದರು.</p><p>ದುಗ್ಗಿ ಹಾಗು ಪೀಚಿ ಒಟ್ಟಿಗೆ “ಮೂರು” ಎಂದರು. ಕುಳ್ಳನು ತನ್ನ ಎರಡು ಬೆರಳನ್ನು ತೋರಿಸಿ ಹಲ್ಲು ಬಿಟ್ಟನು.</p><p>“ಹೌದಾ!” ಎಂದು ಜೋರಾಗಿ ನಕ್ಕು, ಅಷ್ಟೂ ಹೂವನ್ನು ತಮ್ಮ ಬಳಿ ಇದ್ದ ಬಟ್ಟೆ ಬ್ಯಾಗಿಗೆ ತುಂಬಿಕೊಂಡರು.</p><p>“ಥಾಂಕ್ಸ್‌ ಕಣ್ರೋ” ಎಂದು ಆ ಹಿರಿಯರು ಕುಳ್ಳನ ತಲೆಯನ್ನು ಸವರಿ ಮುಂದೆ ಹೋದರು. ದುಗ್ಗಿ ಅವರ ಹಿಂದೆಯೇ ಓಡಿದಳು. ಅವರು ಹಿಡಿದಿದ್ದ ನಾಯಿಯು ಕೋಪದಲ್ಲಿ ಗುರ್ರ್‌ ಎಂದಿತು. ಅವರು ತಕ್ಷಣ ತಿರುಗಿ, “ಏನು ಬೇಕೆ ಪುಟ್ಟಿ?” ಎಂದರು.</p><p>“ಸಾರ್‌, ಅವ್ನು ನನ್‌ ತಮ್ಮ, ಕುಳ್ಳ ಅಂತ. ಅವ್ನಿಗೆ ಬಿಸ್ಕತ್ತು ಕೊಡ್ಸಿ ಸಾರ್”‌ ಎಂದಳು.</p><p>ಆ ಹಿರಿಯರಿಗೆ ಕನಿಕರ ಮೂಡಿತೇನೋ. ಅಂಗಡಿಯಲ್ಲಿ ಎರಡು ಪ್ಯಾಕೆಟ್ಟು ಪಾರ್ಲೆಜಿ ಕೊಂಡುಕೊಂಡರು.</p><p>ಪೀಚಿ ಕುಳ್ಳನ ಕಿವಿಯಲ್ಲಿ, “ನೋಡೋ ಕುಳ್ಳ, ಎರಡು ಪ್ಯಾಕೆಟ್ಟು!” ಎಂದಳು ಸಂತೋಷದಲ್ಲಿ. ಅವರು ಒಂದು ಪ್ಯಾಕೆಟ್ಟನ್ನು ದುಗ್ಗಿಯ ಕೈಲಿತ್ತು, ಇನ್ನೊಂದನ್ನು ಅಲ್ಲಿಯೇ ತೆರೆದರು. ಕುಳ್ಳನ ಮುಖ ಕೆಂಪಾಯಿತು. ಯಾರೂ ಮಾತನಾಡಲಿಲ್ಲ.</p><p>ಅವರು ಬಿಸ್ಕತ್ತನ್ನು ತಮ್ಮ ನಾಯಿಗೆ ಹಾಕಿ ಅದರ ಬೆನ್ನು ಸವರಿದರು.</p><p>ಕುಳ್ಳ, ದುಗ್ಗಿ, ಹಾಗು ಪೀಚಿ ನೋಡುತ್ತಲೇ ಇದ್ದರು.</p><p>“ಯಾಕ್ರೋ, ಕೊಡ್ಸಿಲ್ವ, ನಡೀರಿ, ನಡೀರಿ” ಎಂದರು.</p><p>ಪೀಚಿ, ದುಗ್ಗಿ ಹಾಗು ಕುಳ್ಳನನ್ನು ಎಳೆದುಕೊಂಡು ಮನೆಯ ಬಳಿ ಬಂದರು.</p><p>ಲೋಟಗಳನ್ನು ತೆಗೆದು ಹಾಲನ್ನೂ ಬಗ್ಗಿಸಿದರು.</p><p>ತಾತ ಬೀಡಿ ಸೇದುತ್ತಾ ನೋಡುತ್ತಿದ್ದರು. ಪಕ್ಕದಲ್ಲಿ ಮಣ್ಣು ಎತ್ತಿ ಹಾಕುತ್ತಿದ್ದ ಕೂಲಿಗೆ ಹೇಳಿದರು: “ನೋಡೋ ಏನು ಆನಂದ ಮಕ್ಳಿಗೆ ಆ ಬಿಸ್ಕತ್ತು ಹಾಲಿನಲ್ಲಿ!”</p><p>ಅಂದೇ ಕಸ ಗುಡಿಸುವಾಗ ಎರಡು ಖಾಲಿ ಪಾರ್ಲೇಜಿ ಪ್ಯಾಕೆಟ್ಟುಗಳನ್ನು ಎಸೆಯುತ್ತಾ ಕೆಂಪಮ್ಮ ಬೈದುಕೊಂಡಳು, “ಏನ್‌ ಕಾಸ್‌ ಖರ್ಚು ಮಾಡ್ತಾವೋ ಮುಂಡೇವು..ಬಿಸ್ಕತ್ತು ಬಿಸ್ಕತ್ತು ಅಂತ!”</p></div>
+</article>
+</main>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="../../naanu-kapi/">Naanu Kapi</a><a href="../../contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation"><a href="../../" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#home"/></svg><span>Home</span></a><a href="../../profile/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#person"/></svg><span>Profile</span></a><a href="../../work/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#archive"/></svg><span>Work</span></a><a href="../../law/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#backpack"/></svg><span>Law</span></a><a href="../../blog/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#pencil-2"/></svg><span>Blog</span></a><a href="../../interests/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#reader"/></svg><span>Interests</span></a></nav>
+<script src="../../assets/dock.js" defer></script>
+</body></html>

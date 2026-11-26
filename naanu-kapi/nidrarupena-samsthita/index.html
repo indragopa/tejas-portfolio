@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ | Tejas H Badala</title>
+<meta name="description" content="ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ · Naanu Kapi, a Kannada story by Tejas H Badala."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<script>(() => {
+  const key = "tejas-portfolio-theme";
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const root = document.documentElement;
+  let preference = null;
+  let toggle;
+
+  function readPreference() {
+    try {
+      const value = window.localStorage.getItem(key);
+      preference = value === "dark" || value === "light" ? value : null;
+    } catch {
+      // The in-page switch also works when browser storage is unavailable.
+    }
+  }
+
+  function render() {
+    const theme = preference || (system.matches ? "dark" : "light");
+    root.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#1c1d2b" : "#faf9f5";
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+      toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+  }
+
+  readPreference();
+  render();
+  document.addEventListener("DOMContentLoaded", () => {
+    toggle = document.querySelector(".theme-toggle");
+    toggle.addEventListener("click", () => {
+      preference = root.dataset.theme === "dark" ? "light" : "dark";
+      try { window.localStorage.setItem(key, preference); } catch { /* Session-only preference. */ }
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  });
+  system.addEventListener("change", render);
+  window.addEventListener("storage", event => {
+    if (event.key === key || event.key === null) { readPreference(); render(); }
+  });
+  window.addEventListener("pageshow", () => { readPreference(); render(); });
+})();
+</script>
+<link rel="canonical" href="https://tejasbadala.in/naanu-kapi/nidrarupena-samsthita/">
+<meta property="og:title" content="ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ | Tejas H Badala"><meta property="og:description" content="ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ · Naanu Kapi, a Kannada story by Tejas H Badala."><meta property="og:url" content="https://tejasbadala.in/naanu-kapi/nidrarupena-samsthita/"><meta property="og:image" content="https://tejasbadala.in/assets/western-ghats.webp">
+<link rel="icon" href="../../assets/te-mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/touch-icon.png">
+<link rel="preload" href="../../assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="page-kapi">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><div class="wrap mast-inner">
+<a href="../../" class="brand" aria-label="Tejas H Badala, home"><img src="../../assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<div class="header-end"><span class="location"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#globe"/></svg> Mysuru, India</span><a class="contact-link" href="../../contact/" aria-label="Get in touch" title="Get in touch"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#envelope-closed"/></svg> <span>Get in touch</span></a>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+  <svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#moon"/></svg><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#sun"/></svg>
+</button></div>
+</div></header>
+<main id="main" tabindex="-1"><article class="wrap inside reading">
+  <a class="breadcrumb" href="../../naanu-kapi/">Naanu Kapi</a>
+  <h1 lang="kn">ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ</h1>
+  <p class="byline">Tejas H Badala · <time datetime="2023-07-01">1 July 2023</time></p>
+  <div class="article-body" lang="kn"><p>ರಾಮಾಯಣ ನಡೆಯಿತು.</p><p>ನಿಮಗೆ ತುಂಬಾ ಹಿಡಿಸಿದ ಪಾತ್ರ ಯಾವುದು?</p><p>ಈಗ ಏನು ಉತ್ತರಿಸಬೇಡಿ. ಪರ್ವಾಗಿಲ್ಲ. ನಾನೇ ಊಹಿಸಿಕೊಳ್ತೀನಿ.</p><p>ನನಗಂತೂ ಊರ್ಮಿಳೆಯ ಪಾತ್ರ ತುಂಬಾ ಇಷ್ಟ. ಸರಿ, ನಮ್ಮ ಸಾಹಿತಿಗಳ ವ್ಯಾಖ್ಯಾನ, ಇನ್ನು ಪಂಡಿತರ ವಿಶ್ಲೇಷಣೆ, ಇವೆಲ್ಲ ಇದೆ. ಆದರೆ ನನಗೆ ಇಷ್ಟವಾದ ಕಾರಣ ಹೇಳಿದರೆ ಬಹುಶಃ ನಿಮಗೂ ಇಷ್ಟವಾಗಬಹುದೇನೋ, ನೋಡಿ.</p><p>ರಾಜಸ್ಥಾನದಲ್ಲಿ ಲಕ್ಷ್ಮಣ-ಊರ್ಮಿಳೆಗೇ ಮೀಸಲಾದ ದೇವಳವಿದೆಯಂತೆ. ಕ್ರಿ.ಶ ಹತ್ತೊಂಭತ್ತನೇ ಶತಮಾನದಲ್ಲಿ ಭರತ್‌ಪುರದ ರಾಜ ಬಲ್ವಂತ್‌ ಸಿಂಗ್‌ ಇದನ್ನು ಕಟ್ಟಿಸಿದವನು ಎಂದು ಅಲ್ಲಿನ ಜನ ಹೇಳುತ್ತಾರೆ. ಅಷ್ಟಕ್ಕೂ ಲಕ್ಷ್ಮಣ ಪ್ರಶಂಸಾರ್ಹ. ಊರ್ಮಿಳೆ ಮಾಡಿದ್ದೇನು?</p><p>ಹದಿನಾಲ್ಕು ವರ್ಷಗಳ ಕಾಲ ಅಣ್ಣ-ಅತ್ತಿಗೆ ಮಲಗಿರಬೇಕಾದರೆ ನಿದ್ದೆಯನ್ನು ತ್ಯಜಿಸಿ ಅವರನ್ನು ಕಾಯುತ್ತಿದ್ದುದು ಈ ಸೌಮಿತ್ರಿಯೇ. ಹಾಗಿದ್ದರೆ ಅವನಿಗೆ ನಿದ್ದೆ?</p><p>ಲಕ್ಷ್ಮಣನ ಬದಲಾಗಿ ಅವನ ಪತ್ನಿಯಾದ ಊರ್ಮಿಳೆಯು ನಿದ್ದೆ ಮಾಡಿದಳಂತೆ! ಈ ಸಂಗತಿಯು ವಾಲ್ಮೀಕಿ ರಾಮಾಯಣದಲ್ಲಿ ಕಾಣಸಿಗದಾದರೂ, ಬೇರೆ ಬೇರೆ ಸ್ಥಳಗಳಲ್ಲಿ ಪ್ರಚಲಿತವಿರುವ ಜನಪದ ರಾಮಾಯಣದಲ್ಲಿ ಕೇಳಬಹುದು. ಇರಲಿ ಬಿಡಿ. ನಮಗೆ ಯಾವುದು ಅನುಕೂಲಕರವೋ ಅದನ್ನೇ ಒಪ್ಪುವುದು ನಮ್ಮ ಸಹಜ ಸ್ವಭಾವವಲ್ಲವೇ? ಊರ್ಮಿಳೆಯು ನಿದ್ರಾದೇವಿಯನ್ನು ಪ್ರಾರ್ಥಿಸಿ, ʼಗಂಡನ ಬದಲಾಗಿ ನಾನೇ ಮಲಗುತ್ತೇನೆ, ಆಗ ಅವರು ಅವರ ಅಣ್ಣ ಅತ್ತಿಗೆಯನ್ನು ರಕ್ಷಿಸಬಹುದುʼ ಎಂದು ಬೇಡಿದ್ದಳಂತೆ!</p><p>ಎಂತಹ ಮಹಾಸತಿ!</p><p>ಇದಕ್ಕೇ ನೋಡಿ, ನನಗೆ ಊರ್ಮಿಳೆಯ ಪಾತ್ರ ಇಷ್ಟ.</p><p>ನಿದ್ದೆ ಎನ್ನುವುದು ಮಾನವನ ಸರ್ವಾಂಗೀಣ ಅಭ್ಯುದಿಗೆ ಬೇಕಾದಂತಹ ಅತ್ಯಗತ್ಯ ಕ್ರಿಯೆ. ಅದು ಹೆಚ್ಚಾದರೂ, ಕಡಿಮೆಯಾದರೂ ದೇಹ-ಮನಸ್ಸುಗಳಿಗೆ ಬಹು ಮಾರಕ. ಆದರೇನು? ಯಾ ದೇವಿ ಸರ್ವಭೂತೇಷು, ನಿದ್ರಾರೂಪೇಣ ಸಂಸ್ಥಿತ! ಸಕಲ ಜೀವಿಗಳಲ್ಲೂ ನಿದ್ರೆಯ ರೂಪದಲ್ಲಿ ಸ್ಥಿತಳಾಗಿರುವ ದೇವಿಯೇ; ನಮಸ್ತಸ್ಯೈ ನಮಸ್ತಸ್ಯೈ ನಮಸ್ತಸ್ಯೈ ನಮೋ ನಮಃ.(ಇದರ ಅರ್ಥ ತುಂಬಾ ಸೂಕ್ಷ್ಮವೂ ಗಂಭೀರವೂ ಅಗಿದೆ. ಆದರೆ ಈಗ ನಾನು ಅದನ್ನು ಹಗುರವಾಗಿ ಬಳಸುತ್ತಿರುವೆ, ಕ್ಷಮಿಸಿಬಿಡು ತಾಯಿ!)</p><p>ಚಿಕ್ಕಂದಿನಿಂದಲೂ ಅಷ್ಟೆ. ಅಪ್ಪ-ಅಮ್ಮ ನನಗೆ ಈಗಲೂ ಹೇಳುತ್ತಾರೆ: ʼಯಾವಾಗಲೂ ನಿದ್ದೆ ಮಾಡುತ್ತಿರುತ್ತಿಯಲ್ಲೋ, ಇನ್ನು ಯಾವಾಗ ಬದುಕೋದು? ಬ್ರಾಹ್ಮೀ ಮುಹೂರ್ತವನ್ನ ಎಂದಾದರೂ ನೋಡುವ ಆಸೆ ಇದೆಯೇ?ʼ ಅಂತ. ಅದನ್ನು ಕೇಳಿ ಸರಿಪಡಿಸಿಕೊಳ್ಳುವ ಶ್ರದ್ಧೆ-ಭಕ್ತಿಗಳು ನನಗಿದ್ದಿದ್ದರೆ ಇನ್ನೇನು!?</p><p>ನಿದ್ದೆಯಲ್ಲಿ ದೊರಕುವ ಅಪ್ರತಿಮ ಆನಂದದ ವರ್ಣನೆಯನ್ನು ಮಾಡಲು ಸಾಧ್ಯವೇ?</p><p>ನಿದ್ರಾಹೀನರನ್ನು ಕೇಳಿ; ಅವರಿಗೆ ಗೊತ್ತು ನಿದ್ದೆಯ ಬೆಲೆ. ನಿದ್ರಾಧೀನರನ್ನು ಕೇಳಿ; ಅವರಿಗೂ ಗೊತ್ತು ನಿದ್ದೆಯ ಬೆಲೆ.</p><p>ಇರುಳಿನಲ್ಲಿ ಮಾಡುವ ಗಾಢ ನಿದ್ದೆ ಆಗಲಿ, ಅಥವಾ ಮಧ್ಯಾಹ್ನದ ಉರಿ ಬಿಸಿಲಿನಲ್ಲಿ ಸಣ್ಣದಾಗಿ ತಿರುಗುವ ಫ್ಯಾನಿನ ಸದ್ದನ್ನು ಕೇಳುತ್ತಾ ತೂಕಡಿಸುವುದಾಗಲಿ, ಜಿನುಗುವ ಮಳೆ, ತಣ್ಣಗಿನ ಗಾಳಿ ಕಿಟಕಿಯನ್ನು ಆಗಾಗ ಅಲ್ಲಾಡಿಸುವಾಗ, ಬೆಚ್ಚಗಿನ ಶಾಲು ಒಂದನ್ನು ಮೈ ಮೇಲೆ ಹಾಕಿಕೊಂಡು ಕಣ್ಣು ಮುಚ್ಚಿಕೊಂಡು ಇರುವುದಿರಲಿ; ಇವೆಲ್ಲವೂ ಎಲ್ಲರಿಗೂ ಸಿದ್ಧಿಸದ ಅನುಭವಗಳು. ಪುಣ್ಯವಂತರಿಗೆ ಮಾತ್ರ ಕಣ್ಣು ತುಂಬಾ ನಿದ್ದೆ. ರಾತ್ರಿ ಮಲಗುವ ಮುನ್ನ ದುಃಸ್ವಪ್ನಗಳು ನಾಶವಾಗಲಿ ಎಂದು ನನಗೆ ಅಜ್ಜಿ ಒಂದು ಶ್ಲೋಕವನ್ನು ಹೇಳಿಕೊಟ್ಟಿದ್ದರು: ರಾಮಂ ಸ್ಕಂದಂ ಹನುಮಂತಂ ವೈನತೇಯಂ ವೃಕೋದರಂ, ಶಯನೇಶು ಸ್ಮರೇನಿತ್ಯ, ದುಃಸ್ವಪ್ನಂ ತಸ್ಯ ನಶ್ಯತೇ. ಪುರಾಣ ಪ್ರಸಿದ್ಧ ವೀರ ಪುರುಷರಾದ ರಾಮ, ಸ್ಕಂದ, ಹನುಮ, ಗರುಡ, ಭೀಮ, ಇವರುಗಳನ್ನು ಶಯನದ ಮುನ್ನ ಸ್ಮರಿಸಿದರೆ ದುಃಸ್ವಪ್ನಗಳು ನಾಶವಾಗಿಯೇ ತೀರುತ್ತವೆ ಎಂಬುದು ಇದರ ಸಾರ.</p><p>ತಮಾಷೆ ಎಂದರೆ ಈ ಶ್ಲೋಕವನ್ನು ನಾನು ಮಲಗುವ ಮುನ್ನ ಹೇಳಿ ಹೇಳಿ, ಒಮ್ಮೆ ಹೇಳದೇ ಹೋದರೆ ನಿದ್ದೆಯೇ ಬಾರದು! ಇದಕ್ಕಿಂಥ ಹೆಚ್ಚಿನ ವಿಷಯವೆಂದರೆ, ಈ ಶ್ಲೋಕ ಹೇಳಿದರೆ ಸಾಕು ನನಗೆ ನಿದ್ದೆ ಬರುವುದು! ನಿದ್ದೆ ಮಾಡಲು ಒಂದು ನೆಪ ಬೇಕಷ್ಟೇ!</p><p>ನಿದ್ದೆಯಲ್ಲಿ ಮಾತನಾಡುವ, ಅಥವಾ ನಡೆದು ಹೋಗುವ ಅಭ್ಯಾಸ ನನಗಿಲ್ಲ. ಗೊರಕೆಯು ಯಾವಾಗಲಾದರೂ ಒಮ್ಮೆ ಅಪರೂಪ ಎನ್ನಬಹುದು. ಆದ್ದರಿಂದ, ಮಲಗಿದರೆ, ಇನ್ನೊಬ್ಬರಿಗೆ ತೊಂದರೆಯಂತೂ ಇಲ್ಲ.</p><p>ಇಷ್ಟೂ ನಿದ್ದೆಯ ಬಗ್ಗೆ ಹೇಳಿದ್ದೇನೆ. ಇದನ್ನೇ ಓದುತ್ತಾ ಎಲ್ಲಾದರು ನಿದ್ರೆಗೆ ಜಾರಿಬಿಟ್ಟೀರಿ ಜೋಕೆ!</p><p>ಜೊತೆಗೆ ಒಂದು ಕಿವಿ ಮಾತು: ನನಗೂ, ನಿಮಗೂ. ನಿದ್ದೆ ಮಾಡಬೇಕು ಹೌದು, ದೇಹದ ಆರೋಗ್ಯಕ್ಕಾಗುವಷ್ಟು, ಮನಸ್ಸಿನ ನೆಮ್ಮದಿಗಾಗುವಷ್ಟು. ಸುಖಕ್ಕಲ್ಲ. ಮತ್ತೆ, ಆ ಮನಸ್ಸಿನ ನೆಮ್ಮದಿ, ದೇಹದ ಆರೋಗ್ಯ ಎರಡೂ ವ್ಯಕ್ತಿನಿಷ್ಠ; ನಿಮಗೇ ಬಿಟ್ಟಿದ್ದು ನೋಡ್ರಪ್ಪ.</p><p>ಸರಿ ಮತ್ತೆ, ಗುಡ್‌ ನೈಟ್!</p></div>
+</article>
+</main>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="../../naanu-kapi/">Naanu Kapi</a><a href="../../contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation"><a href="../../" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#home"/></svg><span>Home</span></a><a href="../../profile/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#person"/></svg><span>Profile</span></a><a href="../../work/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#archive"/></svg><span>Work</span></a><a href="../../law/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#backpack"/></svg><span>Law</span></a><a href="../../blog/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#pencil-2"/></svg><span>Blog</span></a><a href="../../interests/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#reader"/></svg><span>Interests</span></a></nav>
+<script src="../../assets/dock.js" defer></script>
+</body></html>

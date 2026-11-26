@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ಬೆಂಗಳೂರಿನ ಬಸ್ಸುಗಳು | Tejas H Badala</title>
+<meta name="description" content="ಬೆಂಗಳೂರಿನ ಬಸ್ಸುಗಳು · Naanu Kapi, a Kannada story by Tejas H Badala."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<script>(() => {
+  const key = "tejas-portfolio-theme";
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const root = document.documentElement;
+  let preference = null;
+  let toggle;
+
+  function readPreference() {
+    try {
+      const value = window.localStorage.getItem(key);
+      preference = value === "dark" || value === "light" ? value : null;
+    } catch {
+      // The in-page switch also works when browser storage is unavailable.
+    }
+  }
+
+  function render() {
+    const theme = preference || (system.matches ? "dark" : "light");
+    root.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#1c1d2b" : "#faf9f5";
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+      toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+  }
+
+  readPreference();
+  render();
+  document.addEventListener("DOMContentLoaded", () => {
+    toggle = document.querySelector(".theme-toggle");
+    toggle.addEventListener("click", () => {
+      preference = root.dataset.theme === "dark" ? "light" : "dark";
+      try { window.localStorage.setItem(key, preference); } catch { /* Session-only preference. */ }
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  });
+  system.addEventListener("change", render);
+  window.addEventListener("storage", event => {
+    if (event.key === key || event.key === null) { readPreference(); render(); }
+  });
+  window.addEventListener("pageshow", () => { readPreference(); render(); });
+})();
+</script>
+<link rel="canonical" href="https://tejasbadala.in/naanu-kapi/bengalurina-bassugalu/">
+<meta property="og:title" content="ಬೆಂಗಳೂರಿನ ಬಸ್ಸುಗಳು | Tejas H Badala"><meta property="og:description" content="ಬೆಂಗಳೂರಿನ ಬಸ್ಸುಗಳು · Naanu Kapi, a Kannada story by Tejas H Badala."><meta property="og:url" content="https://tejasbadala.in/naanu-kapi/bengalurina-bassugalu/"><meta property="og:image" content="https://tejasbadala.in/assets/western-ghats.webp">
+<link rel="icon" href="../../assets/te-mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/touch-icon.png">
+<link rel="preload" href="../../assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="page-kapi">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><div class="wrap mast-inner">
+<a href="../../" class="brand" aria-label="Tejas H Badala, home"><img src="../../assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<div class="header-end"><span class="location"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#globe"/></svg> Mysuru, India</span><a class="contact-link" href="../../contact/" aria-label="Get in touch" title="Get in touch"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#envelope-closed"/></svg> <span>Get in touch</span></a>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+  <svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#moon"/></svg><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#sun"/></svg>
+</button></div>
+</div></header>
+<main id="main" tabindex="-1"><article class="wrap inside reading">
+  <a class="breadcrumb" href="../../naanu-kapi/">Naanu Kapi</a>
+  <h1 lang="kn">ಬೆಂಗಳೂರಿನ ಬಸ್ಸುಗಳು</h1>
+  <p class="byline">Tejas H Badala · <time datetime="2025-07-30">30 July 2025</time></p>
+  <div class="article-body" lang="kn"><p>ನಮ್ಮ ಜಗದಲ್ಲಿನ ಜನರೆಲ್ಲರೂ ಭಾರೀ ಕಾರ್ಯಪ್ರವೃತ್ತರು ಹೌದು. ಅವರವರ ದೃಷ್ಟಿಕೋನದಲ್ಲಿ ಅವರವರ ಕೆಲಸಗಳೇ ಮಹತ್ತರ. ನನಗಂತೂ ಎಲ್ಲರ ಕೆಲಸವೂ ಮಹೋನ್ನತವೇ; ಪಾಪ ಅವರು ಅದೆಷ್ಟು ಕಷ್ಟ ಪಟ್ಟು ಬೆವರು ಸುರಿಸಿ ಆ ಕೆಲಸಗಳನ್ನೆಲ್ಲಾ ಮಾಡಿರಬಹುದು. ಬೆವರು ಎಂದು ನಾನು ಹೇಳುತ್ತಿರುವುದು ಕೇವಲ ಶ್ರಮದ ಸಂಕೇತವಾಗಿ ಅಲ್ಲ. ನಿಜವಾಗಿಯೂ ಬಿಸಿಲು ಬೇಗೆಗಳಲ್ಲಿ ಕುಳಿತೋ, ನಿಂತೋ, ಓಡಾಡಿಯೋ, ಹೊತ್ತೋ, ತನ್ನ ದೇಹದ ರೋಮ ರೋಮದಲ್ಲಿಯೂ ಜಿನುಗುವ ಬೆವರ ಹನಿಗಳ ಕುರಿತಾಗಿ.</p><p>ಅವರ ಪರಿಶ್ರಮವನ್ನು ನಾವು ಖಂಡಿತವಾಗಿಯೂ ಗುರುತಿಸಬೇಕು; ಹಾಗೆ ಮಾಡದಿರುವುದು ಅಪರಾಧವೇ ಹೌದು.</p><p>ಆದರೆ ಸ್ವಾಮಿ ಈ ಗುರುತಿಸುವಿಕೆಯು ಯಾವ ರೀತಿಯದ್ದಾಗಿರಬೇಕು? ನಾನು ಈ ಗುರುತಿಸುವಿಕೆಯ ಅಭ್ಯಾಸವನ್ನು ನಾನಾಗಿಯೇ ಬೆಳೆಸಿಕೊಳ್ಳಲಿಲ್ಲ. ಅನಿವಾರ್ಯ ಕಾರಣಗಳಿಂದಾಗಿ ಅದರಿಂದ ವಿಮುಖನಾಗಲಾರದೆ ಮೈಗೂಡಿಸಿಕೊಂಡದ್ದು. ಒಂದು ನೆನಪಿಡಿ: ನಾನು ಹೇಳುತ್ತಿರುವುದು ಯಾವುದೂ ಅಮೂರ್ತ ರೂಪದ್ದಾಗಲಿ, ಸಾಂಕೇತಿಕವಾದದ್ದಲ್ಲ. ಎಲ್ಲವೂ ನೈಜವಾಗಿ ಪರಿಗಣಿಸಬೇಕಾದದ್ದು.</p><p>ಚತುಶ್ಚಕ್ರ ಧೂಮ್ರವಾಹನದ ಸೌಖ್ಯದಲ್ಲಿ ಅಂಡಲೆವ ನನ್ನಂತಹವನಿಗೆ ಬಸ್ಸಿನಲ್ಲಾದ ಅನುಭವಗಳೆಲ್ಲವೂ ಬಹಳ ವಿಭಿನ್ನವೇ, ವಿಚಿತ್ರವೇ ! (?)</p><p>ಹೈಸ್ಕೂಲಿನಲ್ಲಿ ಶೆರ್ಲಾಕ್‌ ಹೋಮ್ಸ್‌ ಓದಿ ಅವನ ಹುಚ್ಚು ಅಭಿಮಾನಿಯಾಗಿದ್ದೆ. ಅವನ art of deduction ಕೇಳಿ ಎಲ್ಲೆಲ್ಲೂ ಅದನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವ ಯತ್ನ ನನ್ನದು. ಆದರೆ ಅವೆಲ್ಲವೂ ಆಗ ಬಾಲಕತನದ ನಿಷ್ಪ್ರಯೋಜಕ ಪ್ರಯೋಗಗಳಾಗಿದ್ದವು. ಈ ಬಸ್ಸನ್ನು ಹತ್ತಿದ ಮೇಲೆ (ಅಲ್ಲಿ ಹತ್ತುವುದಕ್ಕಷ್ಟೇ ಜಾಗ, ಆಮೇಲೆ ಸಾರಥಿ ಮಹಾಶಯನು ಗೇರು ಹಾಕಿ ಕ್ಲಚ್ಚು ಬಿಟ್ಟಂತೆಲ್ಲಾ ನಮಗೆ ಅಲ್ಲೋಲ ಕಲ್ಲೋಲವೇ) ಆ deduction ಪ್ರಯೋಜನಕ್ಕೆ ಬಂತು ನೋಡಿ! ಒಂದು, ಈಗ ಬಸ್ಸುಗಳಲ್ಲಿ UPI ಇದೆ, ಆದ್ದರಿಂದ ನನ್ನ ಖಾತೆಯಿಂದ ಹಣದ deduction. ಇನ್ನೊಂದು ಅಲ್ಲಿರುವ ಜನಗಳನ್ನು ನನ್ನ ಪಂಚೇಂದ್ರಿಯಗಳೂ ಅನಿವಾರ್ಯ ಕಾರಣಗಳಿಂದ ಗುರುತಿಸುತ್ತಿರಬೇಕಾದರೆ ಆಗುವ deduction (deduction ಎಂದರೆ ಸುತ್ತಲೂ ಇರುವ ವಿವಿಧ ಅಂಶಗಳು, ಅರ್ಥಾತ್‌ ವಾಸನೆ, ಸದ್ದು, ನೋಟ ಇತ್ಯಾದಿಗಳನ್ನು ಗಮನಿಸಿ ಅದರಿಂದ ನಮಗೆ ತಿಳಿದು ಬರುವ ವಿಷಯ). ಅದು ಇಂತಿದೆ ನೋಡಿ:</p><p>ಎಲ್ಲೋ ಒಂದು ಚಿತ್ರಮಂದಿರದಲ್ಲೋ, ಇಲ್ಲವೇ ಫೋನಿನ ಫೇಸ್ಬುಕ್ಕು ಇನ್ಸ್ಟಾಗ್ರಾಮುಗಳಲ್ಲೋ ರೀಲುಗಳಾಗಿ ನೋಡಿದ ಸೆಂಟಿನ ಜಾಹೀರಾತನ್ನು ಓರ್ವನು ಬಹಳ ಗಂಭೀರವಾಗಿಯೇ ಪರಿಗಣಿಸಿದ್ದಾನೆ, ಪುಣ್ಯಾತ್ಮ! ಆದರೆ ದಿನಗೂಲಿ ಪಾಪ, ಎರಡು ಹೊತ್ತಿನ ಮುದ್ದೆ ಬಸ್ಸಾರು ಬಸ್ಸುಗಳಿಗೇ ಸಾಲದ ಹಣದಲ್ಲಿ ಈ ಜಾಹೀರಾತಿನ ದುಬಾರಿ ಸೆಂಟನ್ನು ಕೊಳ್ಳುವುದಾದರೂ ಹೇಗೆ? ಎಲ್ಲವನ್ನೂ ನಕಲು ಮಾಡಬಲ್ಲ ಒಬ್ಬನು ಇದ್ದೇ ಇರುತ್ತಾನೆ. ಎಲ್ಲಿಲ್ಲದಿದ್ದರೂ ಬೆಂಗಳೂರಿನಲ್ಲಂತೂ ಇದ್ದೇ ಇರುತ್ತಾನೆ. ಅವನ ಬಳಿ ಈ ಸೆಂಟುಪುಣ್ಯಾತ್ಮ ನಾಕಾಣಿಯ ಸೆಂಟನ್ನು ಕೊಂಡು ಚೆನ್ನಾಗಿಯೇ ಧರಿಸಿದ್ದಾನೆ. ಬಸ್ಸು ನಿಂತಂತಲ್ಲಾ, ಅದರ ಗರ್ಭದಲ್ಲಿರುವ ತಾತ್ಕಾಲಿಕ ಭ್ರೂಣಗಳಾದ ನಾವುಗಳು ಚೆಲ್ಲಾಪಿಲ್ಲಿಯಾಗುತ್ತೇವೆ. ಈತನೋ ಬಂದೂ ಬಂದೂ ನನ್ನ ಮೇಲೆಯೇ ಒರಗುತ್ತಾನೆ. ಮೊದಲೇ ಒಂದೇ ಹೊಳ್ಳೆಯಲ್ಲಿ ಉಸಿರಾಡುವ ಮನುಜರು ನಾವು. ಆ ಉಸಿರಾಡುತ್ತಿರುವ ಹೊಳ್ಳೆಯ ಕಡೆಗೇ ಅವನು ವಾಲುತ್ತಾನೆ. ದೇವರೇ! ಅವನು ತಿಂದಿರುವ ಬಸ್ಸಾರಿನಲ್ಲಿ ಯಥೇಚ್ಛವಾಗಿ ಸೇರಿಸಿದ್ದಂತಹ ಬೆಳ್ಳುಳ್ಳಿಯು ಅವನ ರಕ್ತಧಾರೆಯಲ್ಲಿ ಒಂದು ಭಾಗವಾಗಿ, ಬೆವರಿನ ಗಂಧದಲ್ಲಿ ಬಹುದೊಡ್ಡ ಪಾತ್ರವನ್ನು ವಹಿಸಿ, ಅವನ ಮಾಸಿದ ಅಂಗಿಯನ್ನು ತೊಯ್ದು, ಹಾಗೆ ಆಗುವಾಗ ಆ ನಾಕಾಣಿ ಸೆಂಟಿನೊಂದಿಗೆ ಬೆರೆತು ಬರುವ ವಾಸನೆಯನ್ನು ಬೇರೆ ಆಯ್ಕೆಗಳೇ ಇಲ್ಲದೆ ಆಘ್ರಾಣಿಸಿದ ನನಗೆ ಏನಾಗಬೇಡ?</p><p>ಅಗೋ ನೋಡಿ, ಓರ್ವ ಅಜ್ಜನು ಕಷ್ಟ ಪಟ್ಟು ಬಸ್ಸು ಹತ್ತಿದ. ಗಟ್ಟಿ ಮುಟ್ಟಾದ ಆಳು ಆತ. ಆದರೆ ಕಷ್ಟ ಪಟ್ಟಿದ್ದು ಏಕೆ? ಬಹುಶಃ ವಯೋಸಹಜ ಮೊಣಕಾಲಿನ ನೋವೋ? ಅಥವಾ ದಿನವಿಡೀ ಕೆಲಸ ಮಾಡಿದ ದಣಿವೋ? ನಾಸಿಕದಿಂದ ಧ್ವನಿಯನ್ನು ಹೊರಳಿಸಿ ʼಟಿಕಿಟ್‌ ಟಿಕಿಟ್‌ʼ ಎನ್ನುತ್ತಾ ಬಂದ ಕಂಡಕ್ಟರ್‌ ಸಾಹೇಬರನ್ನು ಅಜ್ಜ ದಿಟ್ಟಿಸಿ ನೋಡಿದ. ಜೇಬಿನಿಂದ ನಾಲ್ಕೈದು ನಾಣ್ಯಗಳನ್ನು ತೆಗೆದು ʼಎಷ್ಟಿದೆಯೋ ನೋಡು, ಎಲ್ಲಿಗ್‌ ಬರುತ್ತೋ ಕೊಡುʼ ಎಂದ. ಅಜ್ಜನ ಆ ಬಾಯಿಂದ ಹೊರಳಿದ ಒಂದೊಂದು ಪದವೂ ಅಸ್ಪಷ್ಟತೆಯಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿತ್ತು. ಪದಗಳೊಂದಿಗೆ ಹೊರಟ ಸಾರಾಯಿಯ ವಾಸನೆಯು ಸುತ್ತಲೂ ನಿಂತಿದ್ದ ನಮ್ಮೆಲ್ಲರನ್ನೂ ತಲ್ಲಣಗೊಳಿಸಿತು. ನಿಶ್ಚೇಷ್ಟಿತನಾದ ನಾನು, ಬೇರೆ ಗತಿಯಿಲ್ಲದೆ ಅಲ್ಲೇ ಇದ್ದ ಹಲವು ಜನ ಸ್ಪರ್ಶಿತ ಹಳದಿ-ಬೂದು ಮಿಶ್ರಿತ ಕಂಬಕ್ಕೆ ಒರಗಿ ನಿಂತೆ. ಅಜ್ಜನು ತನ್ನ ನೋವನ್ನು ಮರೆಯಲು ಅಥವಾ ಯಾವುದೇ ನೋವು ಇಲ್ಲದಿರಲು ಈ ಸಾರಾಯಿ ಸೇವನೆಗೆ ಒಳಪಟ್ಟಿದ್ದರೇ ಎನ್ನುವುದು ಇಲ್ಲಿ ಕಂಡು ಬರುವ ಪ್ರಶ್ನೆ. ಏನೇ ಆಗಲಿ. ಬೆಂಗಳೂರಿನ ಒಂದು ರಸ್ತೆಯಲ್ಲಿ ಅದೆಷ್ಟು ಅಡಚಣೆಗಳಿವೆ ಎಂಬುದರ ಅರಿವು ನನಗಾಯಿತು. ಅರಿವಾಗಲು ಹಲವು ವಿಧಾನಗಳು. ಅದರಲ್ಲಿ ನನಗೆ ಯಾವುದು ಗೊತ್ತೇ? ಸಾರಾಯಿ ಅಜ್ಜ ಒಂದೆಡೆ ನಿಲ್ಲಲಾರರು ಪಾಪ. ಸಾರಥಿ ಮಹಾಶಯ ಬ್ರೇಕಿನ ಮೇಲೆ ಕಾಲಿಟ್ಟಾಗಲೆಲ್ಲಾ ಅಜ್ಜನ ಕಾಲು ನನ್ನ ಕಾಲ ಮೇಲೆ! ನಾನು ಕಷ್ಟ ಪಟ್ಟು ನನ್ನ ಬೂಟುಗಳನ್ನು ಪಾಲೀಶು ಮಾಡಿದ್ದಷ್ಟೇ ಅಲ್ಲದೆ ದಿನವಿಡೀ ಅದರ ಮೇಲೆ ಯಾವುದೇ ಧೂಳು ಕೂರದಂತೆ ಎಚ್ಚರ ವಹಿಸಿ ಬಸ್ಸನ್ನು ಹತ್ತಿದ್ದೆ. ಅಜ್ಜ ಅದು ಯಾವ ಬಾರಿನಲ್ಲಿ ಅದೆಷ್ಟು ಬಾರಿ ನಡೆದು ಕುಡಿದಿದ್ದರೋ ಏನೋ, ನನ್ನ ಕಾಲ ಕಾಳಬೂಟು ಬರುಬರುತ್ತಾ ಬಿಳಿ-ಮಿಶ್ರಿತ ಬೂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿಬಿಟ್ಟಿತು! ಅಜ್ಜನಿಗೆ ಸಮತೋಲನವೂ ತಪ್ಪಿದ್ದರಿಂದ ಬಲವಾಗಿ ಮೇಲಿನ ಕಂಬವನ್ನು ಹಿಡಿದಿದ್ದರು. ನನಗಿಂತಲೂ ಉದ್ದವೂ ಇದ್ದರು. ಕೇವಲ ಸಾರಾಯಿಯ ವಾಸನೆಯಲ್ಲಿ ನಾವು ಪಯಣಿಸಬೇಕಾದ ಈ ದುರ್ಗಮ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿ ನನಗೆ ಮತ್ತೊಂದು ತೊಡಕುಂಟಾಯಿತು. ಮೇಲೆ ಹಿಡಿದಿದ್ದ ಅವರ ಕಂಕುಳಿನಿಂದ ಹೊರಟ ದುರ್ವಾಸನೆಯು ಈಗಾಗಲೇ ಇದ್ದ ಹಲವು ಕಷ್ಟಗಳೊಂದಿಗೆ ಮೇಳೈಸಿ ಬಹುಶಃ ಘೋರನರಕದ ವಾಹನವಿದೇನೋ ಎನಿಸಿಬಿಟ್ಟಿತು.</p><p>ನಾರಕಿಯಾದ ನನಗೆ ಸ್ವರ್ಗದ ದಾರಿ ಕಾಣಲೇ ಬೇಕೆಂಬ ಹಂಬಲ. ಸ್ವರ್ಗವು ನಾನು ಇಳಿಯುವ ನಿಲ್ದಾಣ. ಪಾಪ ಬಸ್ಸಿನೊಳಗೆ ನರಕವಾದರೂ ಅದು ಸ್ವರ್ಗಕ್ಕೆ ಕರೆದೊಯ್ಯುವುದಲ್ಲವೇ (ಇದನ್ನು ದಯವಿಟ್ಟು ನಿಜಾರ್ಥದಲ್ಲಿ ಓದಬೇಡಿ). ಅಲ್ಲಿಯ ತನಕ ಈ ಶಿಕ್ಷೆಗಳಿಂದ ವಿಮುಖನಾಗಲು ಅಕ್ಕ ಪಕ್ಕದಲ್ಲಿ ಇನ್ನಾರಾದರೂ ಸಹಾಯ ಹಸ್ತ ಚಾಚುವವರಿದ್ದಾರೆಯೇ ಎಂದು ಆರ್ತನಾಗಿ ಎಲ್ಲೆಡೆ ಪರಿಶೀಲಿಸಿದೆ.</p><p>ನಾನು ಮಿಕವಾದೆನೋ ಎಂಬಂತೆ ನಾನು ಒರಗಿ ನಿಂತಿದ್ದ ಸೀಟಿನಲ್ಲೇ ಕುಳಿತಿದ್ದ, ಒಬ್ಬ ಮಹಾಶಯ. ಆತನ ಆಶಯಯಗಳೇನೋ ಅರಿಯೆ; ಹೇಳುತ್ತೇನೆ, ನೀವೇ ನಿರ್ಧರಿಸಿ.</p><p>ಓರ್ವ ವರ್ಣಚಿತ್ರಕಲಾವಿದನು ತನ್ನ ಎಲ್ಲಾ ಬಣ್ಣಗಳನ್ನು ಒಂದೊಂದಾಗಿ ತನ್ನ ಮುಂದೆ ತೆಗೆದಿಟ್ಟುಕೊಳ್ಳುವಂತೆ ಈ ಮಹಾಶಯನು ತನ್ನ ಫೋನಿನಲ್ಲಿ ವಿವಿಧ ಯಾಪುಗಳನ್ನು ತೆರೆದಿಟ್ಟುಕೊಂಡ. ಇದರಲ್ಲೇನಿದೆ, ಇದು ಎಲ್ಲರೂ ಮಾಡುವಂತಹ ಕೆಲಸವೇ ಹೌದೆಂದು ನೀವೆಂದುಕೊಳ್ಳೂತ್ತೀರಿ; ಈ ಮಹಾಶಯನು ತೆರೆದಿಟ್ಟುಕೊಂಡದ್ದು ಎಲ್ಲಾ ಜ್ಯೋತಿಷ್ಯದ ಯಾಪುಗಳು, ಅದರ ಜೊತೆಗೆ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮಗಳಾದ ವಾಟ್ಸಸಾಪು ಇನ್‌ಸ್ಟಾಗ್ರಾಮುಗಳು. ಅದರೊಳಗೆ ಹಲವು ಬಾಲಿಕೆಯರೊಂದಿಗಿನ ಸಂಭಾಷಣೆಗಳು. ಏನು ಮಹಾತ್ಕಾರ್ಯವೋ ಈತನದ್ದು ಎಂದು ನಾನು ನೋಡಿದರೂ ನೋಡದಂತೆ ನಟಿಸುತ್ತಾ ಓರಜೂಪು ಜೂಚುತಿದ್ದೆ. ಇನ್‌ಸ್ಟಾಗ್ರಾಮಿನಲ್ಲಿ ಅವರಿವರು ಹಾಕಿದ್ದ “ಈ ರಾಶಿಯವರ ವೈವಾಹಿಕ ಜೀವನ ಹೀಗಿರುತ್ತದೆ, ಈ ರಾಶಿಯವರ ಪ್ರೇಮಿ ಹೀಗೆ ಆಡುತ್ತಾರೆ” ಇತ್ಯಾದಿ ಪೋಸ್ಟುಗಳನ್ನು ನೋಡುವುದು, ನಂತರ ಜ್ಯೋತಿಷ್ಯದ ಯಾಪಿನಲ್ಲಿ ಅವನು ಸಂಗ್ರಹಿಸಿಟ್ಟಿದ್ದ ತನ್ನ ಗೆಳತಿಯರ ಜಾತಕಗಳೊಂದಿಗೆ ಸಮೀಕರಿಸಿ, ಅವರಿಗೆ ವಾಟ್ಸಾಪಿನ ಮೂಲಕ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸುವುದು! ಇದೇನು ಸ್ವಾಮಿ, ಚಲಿಸುತ್ತಿರುವ ಜನಭರಿತ ಬಸ್ಸಿನ ಒಂದು ಸೀಟಿನಲ್ಲಿ ಕುಳಿತು ಜ್ಯೋತಿಷ್ಯ ಕೇಂದ್ರವನ್ನೇ ನಡೆಸುತ್ತಿದ್ದಾನೋ ಅಥವಾ ತನಗೆ ಸಂಭಾವ್ಯ ವಧುವನ್ನು ಹುಡುಕುತ್ತಿದ್ದಾನೋ ಎಂದು ನಾನು ಯೋಚಿಸುವಷ್ಟರಲ್ಲಿ ಸಾರಥಿ ಪುಣ್ಯಾತ್ಮನು ಧೊಪ್ಪನೆ ಬ್ರೇಕು ತುಳಿದ.</p></div>
+</article>
+</main>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="../../naanu-kapi/">Naanu Kapi</a><a href="../../contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation"><a href="../../" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#home"/></svg><span>Home</span></a><a href="../../profile/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#person"/></svg><span>Profile</span></a><a href="../../work/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#archive"/></svg><span>Work</span></a><a href="../../law/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#backpack"/></svg><span>Law</span></a><a href="../../blog/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#pencil-2"/></svg><span>Blog</span></a><a href="../../interests/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#reader"/></svg><span>Interests</span></a></nav>
+<script src="../../assets/dock.js" defer></script>
+</body></html>
