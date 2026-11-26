@@ -14,21 +14,21 @@
 <script>{% include "theme.js" %}</script>
 <link rel="canonical" href="{{site.domain}}{{page.url}}">
 <meta property="og:title" content="{{title | escape}} | Tejas H Badala"><meta property="og:description" content="{{description | escape}}"><meta property="og:url" content="{{site.domain}}{{page.url}}"><meta property="og:image" content="{{site.domain}}/assets/western-ghats.webp">
-<link rel="icon" href="@root/assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="@root/assets/touch-icon.png">
+<link rel="icon" href="@root/assets/te-mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="@root/assets/touch-icon.png">
 <link rel="preload" href="@root/assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="@root/assets/site.css">
 </head>
 <body class="page-{{section}}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="mast"><div class="wrap mast-inner">
-<a href="@root/" class="brand" aria-label="Tejas H Badala, home"><img src="@root/assets/favicon.png" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<a href="@root/" class="brand" aria-label="Tejas H Badala, home"><img src="@root/assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
 <div class="header-end"><span class="location">{{icon('globe')}} Mysuru, India</span><a class="contact-link" href="@root/contact/" aria-label="Get in touch" title="Get in touch"{% if section=='contact' %} aria-current="page"{% endif %}>{{icon('envelope-closed')}} <span>Get in touch</span></a>
 <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
   {{icon('moon')}}{{icon('sun')}}
 </button></div>
 </div></header>
 <main id="main" tabindex="-1">{{content | safe}}</main>
-<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="@root/contact/">Contact</a></footer>
-<nav class="dock" aria-label="Main navigation">{% for item in site.nav %}<a href="@root/{{item[2]}}" {% if section==item[0] %}aria-current="page"{% endif %}>{{icon(item[3])}}<span>{{item[1]}}</span></a>{% endfor %}</nav>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="@root/naanu-kapi/">Naanu Kapi</a><a href="@root/contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation">{% for item in site.nav.concat([['interests', 'Interests', 'interests/', 'reader']]) %}<a href="@root/{{item[2]}}" {% if section==item[0] %}aria-current="page"{% endif %}>{{icon(item[3])}}<span>{{item[1]}}</span></a>{% endfor %}</nav>
 <script src="@root/assets/dock.js" defer></script>
 </body></html>

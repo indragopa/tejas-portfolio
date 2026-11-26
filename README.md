@@ -24,7 +24,7 @@ Write the opening paragraph here.
 Continue with your article.
 ```
 
-For a bilingual title, add a `gloss` field for the English subtitle. To include an illustration, place the image inside `src/assets/` and set the optional `hero` filename and `heroAlt` description. When GitHub Pages is enabled, committing to `main` rebuilds the blog index and publishes the article. The index sorts articles by date. Existing Blogger links are maintained in `src/_data/archive.json`.
+For a bilingual title, add a `gloss` field for the English subtitle. To include an illustration, place the image inside `src/assets/` and set the optional `hero` filename and `heroAlt` description. When GitHub Pages is enabled, committing to `main` rebuilds the blog index and publishes the article. The index sorts articles by date. The separate Naanu Kapi section renders the Kannada archive from `src/_data/archive.json`.
 
 ## Appearance
 
@@ -51,7 +51,7 @@ In the repository’s Pages settings, save `tejasbadala.in` as the custom domain
 
 - Profile, degree and achievements come from the supplied CV, provisional pass certificate, Kannada author profile and the author’s [existing Kannada portfolio](https://github.com/indragopa/tejugoju). Event photographs and portraits come from the supplied profile. The site publishes the relevant facts and selected photographs.
 - The Araṇyani cover is the publisher’s cover, reproduced to identify the work. [National Book Trust catalogue](https://www.nbtindia.gov.in/books_detail__60__pm-yuva-series__3392__aranyani.nbt)
-- The blog links to the original Kannada articles at [Naanu Kapi](https://naanukapi.blogspot.com/). The Kannada author’s note is reproduced from the author’s existing portfolio.
+- The Naanu Kapi section republishes the text of the author’s Kannada articles from [Naanu Kapi](https://naanukapi.blogspot.com/). The Kannada author’s note is reproduced from the author’s existing portfolio.
 - The home portrait sits on a neutral background. The signature beside it is a transparent vector trace of the author’s handwriting. A nine-second loop traces the signature, holds the completed name and fades before restarting. Readers who prefer reduced motion see the complete signature.
-- The Western Ghats and law desk are original generated illustrations. The favicon artwork depicts a book and a fountain pen nib.
+- The Western Ghats and law desk are original generated illustrations. The site mark pairs ತೇ, the opening of Tejas’s Kannada name, with a small ray of light.
 - The fixed navigation takes inspiration from [Mohan S P’s portfolio](https://mohanx.in/) and uses [Radix Icons](https://www.radix-ui.com/icons). The translucent dock magnifies the nearest item and its neighbours on pointer hover. EB Garamond supplies the upright Latin text, including Indic transliteration. Noto Serif Kannada supplies Kannada script, and DM Sans is used for navigation. All three fonts are self-hosted. Font and icon licences are in `licenses/`.

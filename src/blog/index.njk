@@ -2,9 +2,10 @@
 layout: base.njk
 section: blog
 title: Blog
-description: Essays and notes by Tejas H Badala, with a selection of Kannada writings from his Naanu Kapi blog.
+description: Career, academic writing and personal reflections by Tejas H Badala.
 ---
 {% from "ui.njk" import label, icon %}
-<div class="wrap inside"><div class="page-heading">{{label('Blog')}}<h1>Essays and notes</h1><p class="deck">Here I publish notes on literature and law. My Kannada blog, Naanu Kapi, brings together short fiction and essays on everyday life.</p></div>
+<div class="wrap inside"><div class="page-heading">{{label('Blog')}}<h1>Essays and reflections</h1><p class="deck">My notebook on law, literature and the questions I carry from the classroom into my working life.</p></div>
+{% include "writing-nav.njk" %}
 <div class="posts">{% for post in collections.article | reverse %}<article class="post-teaser">{% if post.data.hero %}<a class="teaser-art" href="@root{{post.url}}" aria-label="{{post.data.gloss or post.data.title}}"><img src="@root/assets/{{post.data.hero}}" alt="" loading="lazy"></a>{% endif %}<div class="teaser-copy"><span class="kicker">{{post.data.category}}{% if post.data.language=='kn' %} · Kannada{% endif %}</span><h2><a href="@root{{post.url}}" lang="{{post.data.language or 'en'}}">{{post.data.title}}</a></h2>{% if post.data.gloss %}<p>{{post.data.gloss}}</p>{% endif %}<a class="text-link" href="@root{{post.url}}">Read article</a></div></article>{% endfor %}</div>
-<section class="archive"><div class="section-heading"><h2>Naanu Kapi</h2><a class="text-link" href="{{site.blogger}}">Visit the archive</a></div><p class="archive-intro">These pieces open in their original Kannada editions.</p><div class="archive-list">{% for post in archive %}<a href="{{post.url}}"><span lang="kn">{{post.title}}</span><time datetime="{{post.date}}">{{post.date | readableDate}}</time></a>{% endfor %}</div></section></div>
+</div>

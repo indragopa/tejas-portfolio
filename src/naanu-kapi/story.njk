@@ -1,0 +1,18 @@
+---
+layout: base.njk
+section: kapi
+pagination:
+  data: archive
+  size: 1
+  alias: story
+permalink: "/naanu-kapi/{{ story.slug }}/index.html"
+eleventyComputed:
+  title: "{{ story.title }}"
+  description: "{{ story.title }} · Naanu Kapi, a Kannada story by Tejas H Badala."
+---
+<article class="wrap inside reading">
+  <a class="breadcrumb" href="@root/naanu-kapi/">Naanu Kapi</a>
+  <h1 lang="kn">{{story.title}}</h1>
+  <p class="byline">Tejas H Badala · <time datetime="{{story.date}}">{{story.date | readableDate}}</time></p>
+  <div class="article-body" lang="kn">{% for p in story.paragraphs %}<p>{{p | escape}}</p>{% endfor %}</div>
+</article>

@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ಪರೀಕ್ಷೆ ಪರ್ವ | Tejas H Badala</title>
+<meta name="description" content="ಪರೀಕ್ಷೆ ಪರ್ವ · Naanu Kapi, a Kannada story by Tejas H Badala."><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<script>(() => {
+  const key = "tejas-portfolio-theme";
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const root = document.documentElement;
+  let preference = null;
+  let toggle;
+
+  function readPreference() {
+    try {
+      const value = window.localStorage.getItem(key);
+      preference = value === "dark" || value === "light" ? value : null;
+    } catch {
+      // The in-page switch also works when browser storage is unavailable.
+    }
+  }
+
+  function render() {
+    const theme = preference || (system.matches ? "dark" : "light");
+    root.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#1c1d2b" : "#faf9f5";
+    if (toggle) {
+      toggle.setAttribute("aria-pressed", String(theme === "dark"));
+      toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+  }
+
+  readPreference();
+  render();
+  document.addEventListener("DOMContentLoaded", () => {
+    toggle = document.querySelector(".theme-toggle");
+    toggle.addEventListener("click", () => {
+      preference = root.dataset.theme === "dark" ? "light" : "dark";
+      try { window.localStorage.setItem(key, preference); } catch { /* Session-only preference. */ }
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  });
+  system.addEventListener("change", render);
+  window.addEventListener("storage", event => {
+    if (event.key === key || event.key === null) { readPreference(); render(); }
+  });
+  window.addEventListener("pageshow", () => { readPreference(); render(); });
+})();
+</script>
+<link rel="canonical" href="https://tejasbadala.in/naanu-kapi/parikshe-parva/">
+<meta property="og:title" content="ಪರೀಕ್ಷೆ ಪರ್ವ | Tejas H Badala"><meta property="og:description" content="ಪರೀಕ್ಷೆ ಪರ್ವ · Naanu Kapi, a Kannada story by Tejas H Badala."><meta property="og:url" content="https://tejasbadala.in/naanu-kapi/parikshe-parva/"><meta property="og:image" content="https://tejasbadala.in/assets/western-ghats.webp">
+<link rel="icon" href="../../assets/te-mark.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/touch-icon.png">
+<link rel="preload" href="../../assets/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="page-kapi">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><div class="wrap mast-inner">
+<a href="../../" class="brand" aria-label="Tejas H Badala, home"><img src="../../assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
+<div class="header-end"><span class="location"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#globe"/></svg> Mysuru, India</span><a class="contact-link" href="../../contact/" aria-label="Get in touch" title="Get in touch"><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#envelope-closed"/></svg> <span>Get in touch</span></a>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+  <svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#moon"/></svg><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#sun"/></svg>
+</button></div>
+</div></header>
+<main id="main" tabindex="-1"><article class="wrap inside reading">
+  <a class="breadcrumb" href="../../naanu-kapi/">Naanu Kapi</a>
+  <h1 lang="kn">ಪರೀಕ್ಷೆ ಪರ್ವ</h1>
+  <p class="byline">Tejas H Badala · <time datetime="2023-07-04">4 July 2023</time></p>
+  <div class="article-body" lang="kn"><p>ಬರೆದು ಬರೆದು ಸಾಕಾಗಿಹೋಗಿದೆ ಎಂದು ಬರಹಗಾರರು ಎಂದಾದರೂ ಹೇಳಿರುವುದನ್ನು ಕೇಳಿದ್ದೀರಾ? ಬರಹಗಾರರೆಲ್ಲರೂ ಬರೆಯುತ್ತಾರೆ. ಆದರೆ ಬರೆಯುವವರೆಲ್ಲರೂ ಬರಹಗಾರರಲ್ಲ. ಏಕೆಂದರೆ ಬರವಣಿಗೆ ಜಗದಲ್ಲಿ ಹೇರಳವಾಗಿದೆ. ಅದರಲ್ಲೂ ವಿದ್ಯಾರ್ಥಿಗಳು ಬರೆದು ಬರೆದು ರೋಸಿಹೋಗಿರುತ್ತಾರೆ. ಪರೀಕ್ಷೆಗಳನ್ನೆಲ್ಲಾ ರಾಶಿ ಹಾಕಿದರೆ ದಪ್ಪ ದಪ್ಪ ಪುಸ್ತಕಗಳಾಗುವಂತಹ ಸಾಧ್ಯತೆಗಳು ಬಲು ಹೆಚ್ಚು.</p><p>ಆಗುವುದು ಬೇಡ; ಆದರೆ ʼಅಪೋಕ್ಯಾಲಿಪ್ಸ್‌ʼ ಏನಾದರೂ ಆಗಿ, ಮತ್ತೆ ಭೂಮಿಯ ಮೇಲೆ ಹೊಸತನ, ಮತ್ತೆ ಮಾನವಕುಲ ಆದಿಯಿಂದ ಹುಟ್ಟಿ ಬಂದು, ಪ್ರಗತಿ ಹೊಂದಿ, ಉತ್ಖನನಗಳನ್ನು ನಡೆಸಿದಾಗ ಸಿಗುವುದು ಪ್ರಶ್ನೆ ಪತ್ರಿಕೆಗಳು ಹಾಗು ಅವುಗಳಿಗೆ ತಕ್ಕ ಉತ್ತರ ಪತ್ರಿಕೆಗಳು. ಕೇವಲ ಅಷ್ಟೆ ಅಲ್ಲ, ನಮ್ಮ ಕಾಲದ ಸುದ್ದಿ ಪತ್ರಿಕೆಗಳು ಸಿಕ್ಕಿ, ʼಈ ಬಾರಿಯೂ ಪರೀಕ್ಷೆಗಳಲ್ಲಿ ಬಾಲಕಿಯರದ್ದೇ ಮೇಲುಗೈʼ ಎಂದು ಅವರು ಅದರ ಮೇಲೆ ಸಂಶೋಧನೆ ನಡೆಸಿ, ಹುಡುಗರು ಕೆಲಸಕ್ಕೆ ಬಾರದವರಿರಬಹುದು ಎಂದು ಅವರ ಕಾಲದ ಪಠ್ಯಪುಸ್ತಕಗಳಲ್ಲಿ ಸೇರಿಸಬಹುದು.</p><p>ಪರೀಕ್ಷೆ ಎಂದರೆ ಅದಕ್ಕೆ ಮುನ್ನ ರಜೆ ಇರಬೇಕು. ಆ ʼಸ್ಟಡಿ ಹಾಲಿಡೇʼ ಎಂದು ನೀಡುವ ಕೆಲವು ದಿನಗಳ ರಜದ ಉದ್ದೇಶವೇನು ಗೊತ್ತೆ? ಮೊದಲ ಪರೀಕ್ಷೆಯ ದಿನದ ಬೆಳಗ್ಗೆ ʼಛೇ ರಜದಲ್ಲಿ ಏನೂ ಓದಲೇ ಇಲ್ಲʼ ಎಂದು ನಮ್ಮನ್ನು ಕೊರಗುವಂತೆ ಮಾಡುವುದು.</p><p>ಇನ್ನು ಪರೀಕ್ಷೆಯ ದಿನವೇ ಕೊಠಡಿಯ ಹೊರಗೆ ನಿಂತು ಸನ್ಮಿತ್ರರೊಂದಿಗೆ ವಿದ್ವತ್ಪೂರ್ಣ ಚರ್ಚೆಗಳು ನಡೆಯುತ್ತಿರಬೇಕಾದರೆ, ʼಅವರೂ ನಮ್ಮಷ್ಟೇ ಓದಿದ್ದಾರೆʼ ಎನ್ನುವ ವಿಷಯಕ್ಕಿಂತ, ʼನನಗಿಂತಲೂ ಸ್ಟಡಿ ಹಾಲಿಡೆಯನ್ನ ಅವರುಗಳು ವ್ಯರ್ಥ ಮಾಡಿದ್ದಾರೆʼ ಎನ್ನುವ ವಿಷಯ ಹೆಚ್ಚು ತೃಪ್ತಿ ನೀಡುವಂಥದ್ದು. ಅದೇ ತೃಪ್ತಿಯ ಸುಖದಲ್ಲಿ ಹೇಗೋ ಪರೀಕ್ಷೆ ಬರೆದು, ಹೊರಗೆ ಬಂದು ಮೊದಲು ಮಾಡುವ ಕೆಲಸ? ನನ್ನ ಸ್ನೇಹಿತರೂ ಅದೇ ತಪ್ಪುಗಳನ್ನು ಮಾಡಿದ್ದಾರೆ ತಾನೆ? ಸದ್ಯ. ತಗೋ, ಮತ್ತೆ ಹಾಲು ಕುಡಿದಷ್ಟು ಸಂತೋಷ. ಇವೆಲ್ಲವೂ ಮುಂದೆ ಉತ್ಖನನ ಮಾಡುವ ಬೇರೆ ಗ್ರಹದ ಜೀವಿಗಳೋ ಅಥವಾ ಹೊಸ ಮಾನವರಿಗೋ ಅರ್ಥವಾಗದು ಬಿಡಿ.</p><p>ಈ ಪರೀಕ್ಷೆ ಅಥವಾ ʼಎಕ್ಸಾಂʼ ನ ಕುರಿತಾಗಿ ಎಷ್ಟು ಹೇರಳವಾಗಿ ಸಂಶೋಧನಾ ಸಾಮಗ್ರಿಗಳು ಸಿಗುತ್ತವೆ ಗೊತ್ತೆ? ಪರೀಕ್ಷೆ ಬರೆದು ರೋಸಿಹೋದ ಪ್ರತಿಯೊಬ್ಬನೂ ಪರೀಕ್ಷೆಯ ಕುರಿತಾಗಿ ಬರೆಯುವವನೆ! ಎಲ್ಲಾದರೂ ಶಿಖರಪ್ರಾಯ ವಿದ್ಯಾರ್ಥಿ (ಟಾಪರ್‌ ಅಂತ ಅಷ್ಟೆ) ಪರೀಕ್ಷೆಯ ಕುರಿತಾಗಿ ಹಾಸ್ಯ ಮಾಡಿದ್ದಾಗಲಿ, ಬೇಸರ ಪಟ್ಟಿದ್ದಾಗಲಿ ಕಂಡಿದ್ದೀರೆ? ಊಹುಂ. ಪರೀಕ್ಷೆಗಳಲ್ಲಿ ಉನ್ನತ ಅಂಕಗಳನ್ನ ಗಳಿಸಿ ಇತಿಹಾಸದಲ್ಲಿ ಉಳಿದುಹೋಗುವ ಸಂಚು ಅವರದ್ದು.</p><p>ನಾನು ಯಾವ ಸಂತನೂ ಅಲ್ಲ. ಪರೀಕ್ಷೆ ಯಾಕೆ ಬೇಕು? ನಮ್ಮ ಸಾಮರ್ಥ್ಯ ಅಳಿಯೋಕೆ ಇವರು ಯಾರು ಇತ್ಯಾದಿಯಾಗಿ ಪ್ರಶ್ನೆಗಳನ್ನ ಹಾಕಿ ಬಂಡಾಯವೇಳುವ ಉದ್ದೇಶವೂ ನನಗಿಲ್ಲ. ನಾನು ಶಿಖರಪ್ರಾಯ ವಿದ್ಯಾರ್ಥಿಯೂ ಅಲ್ಲ. ಬಹುಶಃ ಪರೀಕ್ಷೆಗಳಲ್ಲಿ ಹೆಚ್ಚು ಸಾಫಲ್ಯ ಕಾಣದ ಕಾರಣ ಒತ್ತಡವನ್ನು ಹೊರಹಾಕಲು ಬರೆಯುವುದೂ ಒಂದು ವಿಧಾನವಿರಬಹುದೇನೋ?</p><p>ಅದೆಷ್ಟೇ ಓದಿದರೂ, ನಾವು ಎಷ್ಟೇ ತೃಪ್ತಿ ಪಟ್ಟರೂ, ಬರುವ ಅಂಕಗಳಿಂದ ನಮಗೆ ತೃಪ್ತಿ ಆಗಲು ಸಾಧ್ಯವೇ ಇಲ್ಲ. ಕೆಲವೊಮ್ಮೆ ನಾವು ಓದಿದ ಚೆಂದಕ್ಕೆ ಇದೇ ಹೆಚ್ಚು ಎನ್ನುವ ಜ್ಞಾನೋದಯವೂ ಉಂಟಾಗಿ ಆನಂದ ಭಾಷ್ಪ ಹರಿದ ಸನ್ನಿವೇಶಗಳೂ ಇವೆ. ಇರಲಿ ಬಿಡಿ, ಇವೆಲ್ಲವೂ ಬಹಳಷ್ಟು ಮಂದಿ ಹೇಳಿದ, ನೀವು ಕೇಳಿದ, ಎಷ್ಟೊಂದು ಬಾರಿ ಅನುಭವಿಸಿದ ಸಂಗತಿಗಳೆ.</p><p>ಹೌದು ಇಷ್ಟು ಹೊತ್ತಿಗಾಗಲೆ ನೀವು ಊಹಿಸಿರಲೂಬಹುದು. ನಾನು ಇದನ್ನು ಬರೆಯುತ್ತಿರುವುದು ಪರೀಕ್ಷೆಗೆ ಓದಲು ಎಂದು ಕೊಟ್ಟ ರಜದಲ್ಲಿಯೇ!</p><p>ಪರೀಕ್ಷೆಯಲ್ಲಿ ಉತ್ತರವು ನೆನಪಾಗುವುದೋ ಬಿಡುವುದೋ ಬೇರೆಯ ಪ್ರಶ್ನೆ. ಆದರೆ ನನಗಂತೂ ಒಂದೇ ಸಮನೆ ಕಿವಿಯಲ್ಲಿ ಹಾಡುಗಳು ಕೇಳಿಸುತ್ತವೆ, ಸೃಜನಶೀಲತೆಯ ಶಿಖರವನ್ನು ಮುಟ್ಟುವ ಅನುಭವಗಳೂ ಉಂಟಾಗುತ್ತವೆ, ಪ್ರಬುದ್ಧ ಚಿಂತನೆಗಳು ಹೊಳೆಯುತ್ತವೆ- ಎಲ್ಲವೂ ಪರೀಕ್ಷೆ ಮುಗಿಯುವ ತನಕ.</p><p>ಆದರೆ, ಇತ್ತೀಚಿಗೆ ಪ್ರತೀ ಪರೀಕ್ಷೆಯಲ್ಲೂ ನಾನೂ ಕುದುರೆಯ ಮೇಲೆ ಹತ್ತಿ “ಯಾರು ಏನು ಮಾಡುವರು? ನನಗೇನು ಕೇಡು ಮಾಡುವರು?” ಕೇಳಿಸುತ್ತಲೇ ಇತ್ತು. ಎದುರಿಗೆ ಕುಳಿತ ಪರಿವೀಕ್ಷಕರನ್ನ ಕಂಡು ನಾನು ಮನಸ್ಸಿನಲ್ಲೇ ಗುನುಗಿಕೊಂಡೆ: ನೋಡಿ ಸ್ವಾಮಿ, ನಾವಿರೋದೆ ಹೀಗೆ….</p></div>
+</article>
+</main>
+<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="../../naanu-kapi/">Naanu Kapi</a><a href="../../contact/">Contact</a></footer>
+<nav class="dock" aria-label="Main navigation"><a href="../../" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#home"/></svg><span>Home</span></a><a href="../../profile/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#person"/></svg><span>Profile</span></a><a href="../../work/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#archive"/></svg><span>Work</span></a><a href="../../law/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#backpack"/></svg><span>Law</span></a><a href="../../blog/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#pencil-2"/></svg><span>Blog</span></a><a href="../../interests/" ><svg class="ico" viewBox="0 0 15 15" aria-hidden="true" focusable="false"><use href="../../assets/icons.svg#reader"/></svg><span>Interests</span></a></nav>
+<script src="../../assets/dock.js" defer></script>
+</body></html>

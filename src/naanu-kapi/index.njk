@@ -1,0 +1,12 @@
+---
+layout: base.njk
+section: kapi
+title: Naanu Kapi
+description: Kannada humour, short stories and everyday observations by Tejas H Badala.
+---
+{% from "ui.njk" import label %}
+<div class="wrap inside">
+  <header class="page-heading">{{label('Naanu Kapi')}}<h1 class="kapi-title" lang="kn">ನಾನು ಕಪಿ</h1><p class="deck">My Kannada corner for bus rides, schoolboy worries and the occasional onion that finds its way into a story.</p></header>
+  {% include "writing-nav.njk" %}
+  <div class="archive-list">{% for post in archive %}<a href="@root/naanu-kapi/{{post.slug}}/"><span lang="kn">{{post.title}}</span><time datetime="{{post.date}}">{{post.date | readableDate}}</time></a>{% endfor %}</div>
+</div>
