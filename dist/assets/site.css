@@ -273,7 +273,7 @@ h1{font-size:clamp(3.75rem,7.3vw,6.75rem);letter-spacing:-.045em}
 .profile-lead { justify-self:center; width:min(100%,26rem) }
 .profile-lead img,.profile-gallery img { width:100%; border-radius:4px }
 .profile-lead img { height:auto }
-.profile-gallery { display:grid; grid-template-columns:1.1fr 1.1fr .75fr; gap:clamp(.75rem,2.6vw,2.2rem); align-items:start; margin-top:3rem }
+.profile-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(.75rem,2.6vw,2.2rem); align-items:start; margin-top:3rem }
 .profile-gallery img { height:clamp(13rem,22vw,19rem); object-fit:contain; background:var(--surface) }
 .profile-gallery figcaption,.profile-gallery a span { display:inline-block; margin-top:.55rem; color:var(--muted); font:500 .9rem/1.45 var(--sans) }
 .law-heading { max-width:57rem }
@@ -297,11 +297,45 @@ h1{font-size:clamp(3.75rem,7.3vw,6.75rem);letter-spacing:-.045em}
 @media(max-width:680px) {
   .interview,.pursuit { grid-template-columns:1fr }
   .profile-gallery { grid-template-columns:1fr 1fr; gap:1.1rem }
-  .profile-gallery figure:first-child { grid-column:1/-1 }
+  .profile-gallery figure { min-width:0 }
+  .profile-gallery figure:last-child { grid-column:1/-1 }
+  .profile-gallery figure:last-child img { height:auto; max-height:20rem }
   .profile-gallery img { height:auto }
-  .profile-gallery figure:last-child img { max-height:16rem }
+  .profile-gallery img { height:clamp(9.5rem,38vw,15rem); object-fit:contain }
   .translation-pair article { grid-template-columns:minmax(0,.6fr) minmax(0,1fr); gap:.9rem }
   .dock a { font-size:.69rem }
   .footer a { margin-left:0 }
   .footer a:first-of-type { margin-left:auto }
+}
+
+.home-hero {
+  grid-template-columns:1.35fr 1fr;
+  gap:clamp(1.25rem,4vw,3.5rem);
+  padding-block:clamp(1.25rem,2.5vw,2.35rem);
+}
+.home-hero .intro h1 { font-size:clamp(2rem,13cqi,4.85rem) }
+.home-hero .lead { max-width:37rem; font-size:clamp(1.08rem,1.6vw,1.3rem); line-height:1.4 }
+.home-hero .kannada-name { margin:.45rem 0 .65rem }
+.home-hero .actions { margin-top:1rem }
+.author-portrait {
+  width:min(100%,26rem); height:clamp(12rem,17.5vw,15.5rem);
+  border:0; background:transparent; border-radius:0;
+}
+.author-portrait .hero-person { right:2%; height:100%; max-width:62%; object-fit:contain }
+.author-portrait .autograph { left:4%; top:22%; width:44%; max-height:67%; object-fit:contain }
+.literary-meeting {
+  display:flex; flex-wrap:wrap; gap:1rem 1.5rem; align-items:end;
+  margin-top:2.2rem; padding-top:1.5rem; border-top:1px solid var(--line);
+}
+.literary-meeting img { width:min(100%,17rem); height:auto; border-radius:4px }
+.literary-meeting figcaption { font:500 1rem/1.5 var(--sans); color:var(--muted) }
+.stage-pursuit img { width:100%; height:auto; border-radius:4px }
+@media(max-width:680px) {
+  .home-hero { grid-template-columns:1fr; gap:.6rem; padding-block:1.05rem .55rem }
+  .home-hero .intro h1 { font-size:clamp(2.4rem,12cqi,3.8rem) }
+  .home-hero .lead { max-width:35rem; font-size:1.08rem }
+  .home-hero .author-portrait { justify-self:center; width:min(100%,19rem); height:9rem }
+  .home-hero .autograph { left:9%; width:40%; top:23% }
+  .home-hero .hero-person { right:6% }
+  .literary-meeting { align-items:start; flex-direction:column }
 }
