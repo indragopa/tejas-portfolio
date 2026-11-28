@@ -3,12 +3,12 @@
 .writing {display:none}
 @media (prefers-reduced-motion:no-preference) {
   .writing {display:inline}
-  #pen path,.writing,.finish {animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:linear}
+  #pen path,.writing,.finish {animation-duration:3.6s;animation-fill-mode:both;animation-timing-function:linear}
   #pen path {stroke-dasharray:1;stroke-dashoffset:1}
   .writing {animation-name:tracing}
   .finish {animation-name:completed}
   @keyframes tracing {0%,54.2% {opacity:1} 54.22%,100% {opacity:0}}
-  @keyframes completed {0%,54.2% {opacity:0} 54.22%,89% {opacity:1} 97%,100% {opacity:0}}
+  @keyframes completed {0%,54.2% {opacity:0} 54.22%,100% {opacity:1}}
   #pen path:nth-child(1) {animation-name: stroke1}
   @keyframes stroke1 {0%, 1.44% {opacity:0;stroke-dashoffset:1} 1.45% {opacity:1;stroke-dashoffset:1} 8.33%, 100% {opacity:1;stroke-dashoffset:0}}
   #pen path:nth-child(2) {animation-name: stroke2}

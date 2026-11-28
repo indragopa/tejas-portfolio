@@ -8,5 +8,8 @@ description: Kannada humour, short stories and everyday observations by Tejas H 
 <div class="wrap inside">
   <header class="page-heading">{{label('Naanu Kapi')}}<h1 class="kapi-title" lang="kn">ನಾನು ಕಪಿ</h1><p class="deck">My Kannada corner for bus rides, schoolboy worries and the occasional onion that finds its way into a story.</p></header>
   {% include "writing-nav.njk" %}
-  <div class="archive-list">{% for post in archive %}<a href="@root/naanu-kapi/{{post.slug}}/"><span lang="kn">{{post.title}}</span><time datetime="{{post.date}}">{{post.date | readableDate}}</time></a>{% endfor %}</div>
+  <div class="archive-tools" hidden><label for="story-search">Find a story</label><input id="story-search" type="search" placeholder="Search in Kannada or Roman letters" autocomplete="off"><output id="story-count" for="story-search" aria-live="polite"></output></div>
+  <div class="archive-list">{% for post in archive %}<a href="@root/naanu-kapi/{{post.slug}}/" data-slug="{{post.slug}}"><span lang="kn">{{post.title}}</span><time datetime="{{post.date}}">{{post.date | readableDate}}</time></a>{% endfor %}</div>
+  <p class="no-stories" hidden>No stories match. Try another title or clear the search.</p>
+  <script src="@root/assets/archive-search.js" defer></script>
 </div>

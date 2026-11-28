@@ -15,4 +15,5 @@ eleventyComputed:
   <h1 lang="kn">{{story.title}}</h1>
   <p class="byline">Tejas H Badala · <time datetime="{{story.date}}">{{story.date | readableDate}}</time></p>
   <div class="article-body" lang="kn">{% for p in story.paragraphs %}<p>{{p | escape}}</p>{% endfor %}</div>
+  <nav class="reading-end" aria-label="Continue reading"><a class="text-link" href="@root/naanu-kapi/">All Kannada stories</a>{% if pagination.href.next %}<a class="text-link" href="@root{{pagination.href.next}}">Next story →</a>{% endif %}</nav>
 </article>

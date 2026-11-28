@@ -18,7 +18,7 @@
     const theme = preference || (system.matches ? "dark" : "light");
     root.dataset.theme = theme;
     document.querySelector('meta[name="theme-color"]').content =
-      theme === "dark" ? "#1c1d2b" : "#faf9f5";
+      theme === "dark" ? "#20202e" : "#faf6ed";
     if (toggle) {
       toggle.setAttribute("aria-pressed", String(theme === "dark"));
       toggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";

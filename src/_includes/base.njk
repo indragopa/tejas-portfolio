@@ -10,7 +10,7 @@
 </script>{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{% if section == 'home' %}Tejas H Badala | Kannada author and legal researcher{% else %}{{title}} | Tejas H Badala{% endif %}</title>
-<meta name="description" content="{{description | escape}}"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f5">
+<meta name="description" content="{{description | escape}}"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf6ed">
 <script>{% include "theme.js" %}</script>
 <link rel="canonical" href="{{site.domain}}{{page.url}}">
 <meta property="og:title" content="{{title | escape}} | Tejas H Badala"><meta property="og:description" content="{{description | escape}}"><meta property="og:url" content="{{site.domain}}{{page.url}}"><meta property="og:image" content="{{site.domain}}/assets/western-ghats.webp">
@@ -20,15 +20,20 @@
 </head>
 <body class="page-{{section}}">
 <a class="skip" href="#main">Skip to content</a>
-<header class="mast"><div class="wrap mast-inner">
-<a href="@root/" class="brand" aria-label="Tejas H Badala, home"><img src="@root/assets/te-mark.svg" width="37" height="37" alt=""><span>Tejas H Badala</span></a>
-<div class="header-end"><span class="location">{{icon('globe')}} Mysuru, India</span><a class="contact-link" href="@root/contact/" aria-label="Get in touch" title="Get in touch"{% if section=='contact' %} aria-current="page"{% endif %}>{{icon('envelope-closed')}} <span>Get in touch</span></a>
-<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
-  {{icon('moon')}}{{icon('sun')}}
-</button></div>
-</div></header>
+{% set chapters = [['profile','Profile','profile/'],['work','Books & work','work/'],['law','Law','law/'],['blog','Writing','blog/'],['interests','Interests','interests/']] -%}
+<header class="mast">
+  <div class="wrap mast-inner">
+    <a class="brand" href="@root/" aria-label="Tejas H Badala, home"><img src="@root/assets/te-mark.svg" width="35" height="35" alt=""><span>Tejas H Badala</span></a>
+    <nav class="chapters" aria-label="Portfolio sections">{% for key, name, route in chapters -%}
+      <a href="@root/{{route}}"{% if section == key or (key == 'blog' and section == 'kapi') %} aria-current="{{ 'page' if page.url == '/' + route else 'location' }}"{% endif %}>{{name}}</a>
+    {%- endfor %}</nav>
+    <div class="header-end"><a class="contact-link" href="@root/contact/"{% if section == 'contact' %} aria-current="page"{% endif %}>Contact <span aria-hidden="true"><i class="direction" aria-hidden="true">→</i></span></a>
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>{{icon('moon')}}{{icon('sun')}}</button>
+    </div>
+  </div>
+</header>
 <main id="main" tabindex="-1">{{content | safe}}</main>
-<footer class="footer wrap"><span>© Tejas H Badala</span><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span><a href="@root/naanu-kapi/">Naanu Kapi</a><a href="@root/contact/">Contact</a></footer>
-<nav class="dock" aria-label="Main navigation">{% for item in site.nav.concat([['interests', 'Interests', 'interests/', 'reader']]) %}<a href="@root/{{item[2]}}" {% if section==item[0] %}aria-current="page"{% endif %}>{{icon(item[3])}}<span>{{item[1]}}</span></a>{% endfor %}</nav>
-<script src="@root/assets/dock.js" defer></script>
+<footer class="wrap footer"><div><a class="footer-name" href="@root/">Tejas H Badala</a><span lang="kn">ತೇಜಸ್ ಎಚ್ ಬಾಡಾಲ</span></div>
+  <nav aria-label="Footer"><a href="@root/blog/">Essays</a><a href="@root/naanu-kapi/">Naanu Kapi</a><a href="@root/contact/">Contact <i class="direction" aria-hidden="true">→</i></a></nav>
+</footer>
 </body></html>

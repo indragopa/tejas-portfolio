@@ -6,7 +6,8 @@ description: Kannada fiction, essays, translations, editorial work, podcast inte
 ---
 {% from "ui.njk" import icon, label, entry %}
 <div class="wrap inside"><div class="page-heading">{{label('Portfolio')}}<h1>Selected work</h1><p class="deck">My work in Kannada includes historical fiction, poetry, weekly columns and commentary on poetry in performance. I also translate Kannada non-fiction into English.</p></div>
-<section class="feature-book"><div class="book-display"><img src="@root/assets/aranyani-cover.webp" alt="Original cover of Araṇyani" width="350" height="547"></div><div class="feature-copy"><span class="kicker">Historical fiction · Kannada</span><h2>Araṇyani</h2><p>National Book Trust, India, published my novel about resistance to colonial rule in the Western Ghats as part of the first PM-YUVA programme.</p><a class="button" href="@root/work/aranyani/">{{icon('reader')}} About the book</a></div></section>
+<nav class="section-index" aria-label="On this page"><a href="#fiction">Fiction</a><a href="#translations">Translation</a><a href="#editorial">Editorial work</a><a href="#public-life">Public life</a></nav>
+<section class="feature-book" id="fiction"><div class="book-display"><img src="@root/assets/aranyani-cover.webp" alt="Original cover of Araṇyani" width="350" height="547"></div><div class="feature-copy"><span class="kicker">Historical fiction · Kannada</span><h2>Araṇyani</h2><p>National Book Trust, India, published my novel about resistance to colonial rule in the Western Ghats as part of the first PM-YUVA programme.</p><a class="button" href="@root/work/aranyani/">{{icon('reader')}} About the book</a></div></section>
 <section id="translations" class="translations">
   <div class="section-heading"><h2>Books in translation</h2></div>
   <div class="translation-pair">
@@ -17,7 +18,7 @@ description: Kannada fiction, essays, translations, editorial work, podcast inte
       <a class="text-link" href="@root/assets/toppers-invitation.webp">View the September 2026 launch invitation</a></div></article>
   </div>
 </section>
-<section class="essay-grid"><div><h2>Writing & translation</h2>
+<section class="essay-grid" id="editorial"><div><h2>Writing & translation</h2>
 {{entry('Teju-Goju','A collection of Kannada essays that draws humour from my own habits and the incidents of everyday life.','Essays')}}
 {{entry('Nakshatragala Jodane','I wrote and published this first collection of Kannada poems at thirteen.','Poetry')}}
 {{entry('Vikrama and Pravasi Prapancha','Kannada columns on public affairs, travel, music, food and local culture.','Periodicals')}}
